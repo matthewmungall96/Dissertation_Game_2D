@@ -299,3 +299,8 @@
 "Assets\Art\2D Space Kit\Scripts\PlayerControlledTurret.cs"
 "Assets\Art\2D Space Kit\Scripts\Projectile.cs"
 "Assets\Art\2D Space Kit\Scripts\ShipCamera.cs"
+Assets\Scripts\CharacterBlaster.cs
+Assets\Scripts\MainMenuConsole.cs
+Assets\Scripts\ProjectileBehaviour.cs
+Assets\Scripts\ShipMovementScript.cs
+Assets\Scripts\SmoothCameraFollow.cs
