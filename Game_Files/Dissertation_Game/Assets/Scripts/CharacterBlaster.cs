@@ -6,7 +6,7 @@ public class CharacterBlaster : MonoBehaviour
 {
     public Transform blaster1;
     public Transform blaster2;
-
+    public AudioSource missileAudio;
     public GameObject missilePrefab;
 
     // Update is called once per frame
@@ -14,6 +14,7 @@ public class CharacterBlaster : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            missileAudio.Play();
             Shoot();
         }
     }
