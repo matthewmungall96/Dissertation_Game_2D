@@ -4,54 +4,67 @@ using UnityEngine;
 
 public class ShipMovementScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public bool GamePaused = false;
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.S))
+        if (GamePaused == false)
         {
-            Debug.Log("Character.Log.1: Moving Down.");
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                Debug.Log("Character.Log.1: Moving Down.");
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                gameObject.transform.Translate(Vector3.left * 0.1f);
+            }
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                Debug.Log("Character.Log.2: Moving Up.");
+            }
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                gameObject.transform.Translate(Vector3.right * 0.1f);
+            }
+
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                Debug.Log("Character.Log.3: Moving Left.");
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                gameObject.transform.Translate(Vector3.up * 0.1f);
+            }
+
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                Debug.Log("Character.Log.4: Moving Right.");
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                gameObject.transform.Translate(Vector3.down * 0.1f);
+            }
         }
 
-        if (Input.GetKey (KeyCode.S))
+        else if (GamePaused == true)
         {
-            gameObject.transform.Translate (Vector3.left * 0.1f);
+            return;
         }
+        
+    }
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log("Character.Log.2: Moving Up.");
-        }
+    public void OnPause()
+    {
+        GamePaused = true;
+    }
 
-        if (Input.GetKey (KeyCode.W))
-        {
-            gameObject.transform.Translate (Vector3.right * 0.1f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Debug.Log("Character.Log.3: Moving Left.");
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            gameObject.transform.Translate(Vector3.up * 0.1f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Debug.Log("Character.Log.4: Moving Right.");
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            gameObject.transform.Translate(Vector3.down * 0.1f);
-        }
+    public void UnPause()
+    {
+        GamePaused = false;
     }
 }

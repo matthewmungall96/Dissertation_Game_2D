@@ -8,14 +8,24 @@ public class CharacterBlaster : MonoBehaviour
     public Transform blaster2;
     public AudioSource missileAudio;
     public GameObject missilePrefab;
+    private bool GamePaused = false;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            missileAudio.Play();
-            Shoot();
+            if (GamePaused == true)
+            {
+                return;
+            }
+
+            else if (GamePaused == false)
+            {
+                missileAudio.Play();
+                Shoot();
+            }
+
         }
     }
 
@@ -23,6 +33,15 @@ public class CharacterBlaster : MonoBehaviour
     {
         Instantiate(missilePrefab, blaster1.position, blaster1.rotation);
         Instantiate(missilePrefab, blaster2.position, blaster2.rotation);
+    }
 
+    public void OnPause()
+    {
+        GamePaused = true;
+    }
+
+    public void UnPause()
+    {
+        GamePaused = false;
     }
 }

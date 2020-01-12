@@ -138,6 +138,8 @@ MonoBehaviour:
   rb: {fileID: 6378343381345104538}
   damage: 30
   lifetime: 3
+  missleSound: {fileID: 3228625360835478137, guid: 8b7922db3c923ea47af04ecc2fb1a2cf,
+    type: 3}
 --- !u!1 &6354196374837125838
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,6 @@ public class ProjectileBehaviour : MonoBehaviour
     public float lifetime;
 
 
-
     private void Start()
     {
         rb.velocity = Vector3.right * speed;
