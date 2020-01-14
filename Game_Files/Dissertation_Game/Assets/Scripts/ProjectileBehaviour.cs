@@ -18,8 +18,17 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
-        Destroy(gameObject);
+        if (gameObject.tag == "player")
+        {
+            return;
+        }
+
+        else
+        {
+            Debug.Log(hitInfo.name);
+            Destroy(gameObject);
+        }
+        
     }
 
     private void Disappear()

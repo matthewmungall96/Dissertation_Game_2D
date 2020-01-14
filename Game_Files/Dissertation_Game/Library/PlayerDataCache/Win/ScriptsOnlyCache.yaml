@@ -47,10 +47,13 @@ ScriptsOnlyBuild:
     - PixelCrushers.Wrappers.SaveSystem
     - PixelCrushers.Wrappers.StandardSceneTransitionManager
     - PixelCrushers.Wrappers.UIButtonKeyTrigger
+    - PixelCrushers.Wrappers.UILocalizationManager
     - PixelCrushers.Wrappers.UIPanel
     Assembly-CSharp.dll:
     - CharacterBlaster
+    - EnemyMob
     - FPSLimit
+    - Parallax
     - ProjectileBehaviour
     - ShipMovementScript
     - SmoothCameraFollow
@@ -72,7 +75,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -126,31 +131,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 574}
+      Script: {instanceID: 576}
     - Class: 114
-      Script: {instanceID: 11202}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 11212}
+      Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11216}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11414}
+      Script: {instanceID: 11380}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11576}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11680}
+    - Class: 114
+      Script: {instanceID: 11684}
     - Class: 114
       Script: {instanceID: 11832}
     - Class: 114
@@ -160,111 +167,119 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 11922}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12226}
+      Script: {instanceID: 12242}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12326}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12440}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 12614}
     - Class: 114
-      Script: {instanceID: 12692}
+      Script: {instanceID: 12722}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 12736}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 12782}
+      Script: {instanceID: 12828}
     - Class: 114
-      Script: {instanceID: 12798}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 12838}
+      Script: {instanceID: 12848}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12894}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 13006}
     - Class: 114
-      Script: {instanceID: 13210}
+      Script: {instanceID: 13222}
     - Class: 114
-      Script: {instanceID: 13224}
+      Script: {instanceID: 13240}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13306}
+      Script: {instanceID: 13316}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13342}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13530}
+      Script: {instanceID: 13508}
     - Class: 114
-      Script: {instanceID: 13536}
+      Script: {instanceID: 13534}
     - Class: 114
-      Script: {instanceID: 13558}
+      Script: {instanceID: 13588}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 13622}
+      Script: {instanceID: 13676}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13700}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13758}
     - Class: 114
-      Script: {instanceID: 13684}
-    - Class: 114
-      Script: {instanceID: 13750}
+      Script: {instanceID: 13766}
     - Class: 114
       Script: {instanceID: 13814}
     - Class: 114
-      Script: {instanceID: 13844}
+      Script: {instanceID: 13826}
     - Class: 114
-      Script: {instanceID: 13908}
+      Script: {instanceID: 13832}
     - Class: 114
-      Script: {instanceID: 14114}
+      Script: {instanceID: 13906}
     - Class: 114
-      Script: {instanceID: 14128}
+      Script: {instanceID: 13976}
     - Class: 114
-      Script: {instanceID: 14164}
+      Script: {instanceID: 14010}
     - Class: 114
-      Script: {instanceID: 14222}
+      Script: {instanceID: 14082}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 14312}
     - Class: 114
-      Script: {instanceID: 14360}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 14420}
+      Script: {instanceID: 14364}
     - Class: 114
-      Script: {instanceID: 14622}
+      Script: {instanceID: 14428}
     - Class: 114
-      Script: {instanceID: 14728}
+      Script: {instanceID: 14522}
     - Class: 114
-      Script: {instanceID: 14740}
+      Script: {instanceID: 14574}
     - Class: 114
-      Script: {instanceID: 14774}
-    - Class: 114
-      Script: {instanceID: 14788}
-    - Class: 114
-      Script: {instanceID: 14822}
+      Script: {instanceID: 14634}
     - Class: 114
       Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 14882}
+      Script: {instanceID: 14946}
     - Class: 114
-      Script: {instanceID: 14912}
+      Script: {instanceID: 14960}
     - Class: 114
-      Script: {instanceID: 14928}
+      Script: {instanceID: 14962}
     - Class: 114
-      Script: {instanceID: 20950}
+      Script: {instanceID: 14996}
+    - Class: 114
+      Script: {instanceID: 15010}
+    - Class: 114
+      Script: {instanceID: 15046}
+    - Class: 114
+      Script: {instanceID: 15064}
+    - Class: 114
+      Script: {instanceID: 15088}
+    - Class: 114
+      Script: {instanceID: 15114}
+    - Class: 114
+      Script: {instanceID: 15146}
+    - Class: 114
+      Script: {instanceID: 15162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -344,7 +359,7 @@ ScriptsOnlyBuild:
     className: UIPanel
   - hash:
       serializedVersion: 2
-      Hash: 1b5e55d6320e03e3cd46de2f28350630
+      Hash: 85ce8bdf90b674a931520d60f2e898e8
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUITextTemplate
@@ -354,6 +369,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: CommonLibraryLua
+  - hash:
+      serializedVersion: 2
+      Hash: 23d669c8bf2983ca4a3df160658318a6
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineStateDrivenCamera
   - hash:
       serializedVersion: 2
       Hash: 45f67a508938a03dbfc3d959514d4a46
@@ -440,7 +461,7 @@ ScriptsOnlyBuild:
     className: AlertTrigger
   - hash:
       serializedVersion: 2
-      Hash: d0f09ae8d7a454085808ba7941f0f947
+      Hash: adb7d513cf5a31e415f2f61caabe8bc5
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIButtonTemplate
@@ -500,7 +521,7 @@ ScriptsOnlyBuild:
     className: SequencerCommandLoadLevel
   - hash:
       serializedVersion: 2
-      Hash: 7909b21da7b4d91b7c0b1fc12040c80f
+      Hash: 27693a100a7c35b0303a8145d322500e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardBarkUI
@@ -524,6 +545,12 @@ ScriptsOnlyBuild:
     className: SlideEffect
   - hash:
       serializedVersion: 2
+      Hash: a2113831d3323f931007e1b3812dc814
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFollowZoom
+  - hash:
+      serializedVersion: 2
       Hash: 9f830359d982ed4f9603a0d2251d14e6
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -542,6 +569,12 @@ ScriptsOnlyBuild:
     className: QuestStateIndicator
   - hash:
       serializedVersion: 2
+      Hash: d227987243593b32ae57394d06018643
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFixedSignal
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -552,6 +585,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: SaveSystemTestMenu
+  - hash:
+      serializedVersion: 2
+      Hash: c2e4e30ea89913f485840be418b5894f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
+    className: SequencerCommandCinemachinePriority
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -644,6 +683,18 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 697beb16d87251227b39de32e68f8fb1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Parallax
+  - hash:
+      serializedVersion: 2
+      Hash: c80bc562de10fdbf8b2e9bcb89d80421
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -674,7 +725,7 @@ ScriptsOnlyBuild:
     className: SequencerCommandCamera
   - hash:
       serializedVersion: 2
-      Hash: 7909b21da7b4d91b7c0b1fc12040c80f
+      Hash: 27693a100a7c35b0303a8145d322500e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardBarkUI
@@ -698,7 +749,7 @@ ScriptsOnlyBuild:
     className: GUIControl
   - hash:
       serializedVersion: 2
-      Hash: e628d81d7ace39d07744f023d60f1807
+      Hash: 2fdcc7a843ec4fc3aacd79b5470084c3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIInputField
@@ -764,6 +815,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 6dd3dc11942e98c0a809c81f95fc960c
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineExternalCamera
+  - hash:
+      serializedVersion: 2
       Hash: af56a58fe6ee05d95970911c29024ed1
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -782,13 +839,19 @@ ScriptsOnlyBuild:
     className: UnityUISelectorDisplay
   - hash:
       serializedVersion: 2
+      Hash: b5eb08b578a2f2d80bb106cbe65ab501
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineStoryboard
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: ShowCursorOnConversation
   - hash:
       serializedVersion: 2
-      Hash: c77da7d0d8a0e6b8319875f48d4a296b
+      Hash: 0d9b75432410a030f7e409737b04a969
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: CinemachineCameraPriorityOnDialogueEvent
@@ -824,7 +887,7 @@ ScriptsOnlyBuild:
     className: ConditionObserver
   - hash:
       serializedVersion: 2
-      Hash: f8ff86ee0d7a0a4123a49c953d357842
+      Hash: 914ea5e3d916973924d5a69581383b3b
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIResponseButton
@@ -846,6 +909,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
     className: SequencerCommandTextInput
+  - hash:
+      serializedVersion: 2
+      Hash: 7f94fa9762524c26e64e8a5afd194a0d
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -1046,6 +1115,12 @@ ScriptsOnlyBuild:
     className: LuaOnDialogueEvent
   - hash:
       serializedVersion: 2
+      Hash: fb70f07c52fc0817edd54327b41ca12c
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFreeLook
+  - hash:
+      serializedVersion: 2
       Hash: 792308de3dbcda52147c6ae66c265731
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1154,6 +1229,12 @@ ScriptsOnlyBuild:
     className: UnityGUIQuestLogWindow
   - hash:
       serializedVersion: 2
+      Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: NoiseSettings
+  - hash:
+      serializedVersion: 2
       Hash: de826f8504a866ba90880e669f19d1bd
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
@@ -1178,7 +1259,7 @@ ScriptsOnlyBuild:
     className: ShowCursorOnConversation
   - hash:
       serializedVersion: 2
-      Hash: 3320d3d97dfbf2979aea93d808eb9e3d
+      Hash: 1d0ca4f276866b3ea89f4dbd143374f2
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: TextMeshProTypewriterEffect
@@ -1196,7 +1277,7 @@ ScriptsOnlyBuild:
     className: BarkOnDialogueEvent
   - hash:
       serializedVersion: 2
-      Hash: e52e3ace6999020267cd44f0eb292ec3
+      Hash: d5a2f7973bc86094503b39945f0d6d27
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIQuestTrackTemplate
@@ -1214,7 +1295,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: f8ff86ee0d7a0a4123a49c953d357842
+      Hash: 914ea5e3d916973924d5a69581383b3b
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIResponseButton
@@ -1224,6 +1305,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI
     className: UnityTextFieldUI
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineTrack
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1268,6 +1355,12 @@ ScriptsOnlyBuild:
     className: StandardUIIgnorePauseCodes
   - hash:
       serializedVersion: 2
+      Hash: 1cdde0c3d8008dfe81d27e4c955d4fe7
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFramingTransposer
+  - hash:
+      serializedVersion: 2
       Hash: a06f17050ed1d5da1125b55d97d3b8c0
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -1310,10 +1403,16 @@ ScriptsOnlyBuild:
     className: SelectorFollowTarget
   - hash:
       serializedVersion: 2
-      Hash: 3e77ff6cbb85426b88ca9e368a54bf7e
+      Hash: 18e527472411ea9963ef1bc13773fce7
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIQuestTitleButtonTemplate
+  - hash:
+      serializedVersion: 2
+      Hash: 3c2b11a8027702f7fef4a819d8b9191a
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePOV
   - hash:
       serializedVersion: 2
       Hash: 44399c3ae0c02e666d207f22fbf63f14
@@ -1370,7 +1469,7 @@ ScriptsOnlyBuild:
     className: PSDestroy
   - hash:
       serializedVersion: 2
-      Hash: e628d81d7ace39d07744f023d60f1807
+      Hash: 2fdcc7a843ec4fc3aacd79b5470084c3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIInputField
@@ -1388,7 +1487,7 @@ ScriptsOnlyBuild:
     className: UnityUIColorText
   - hash:
       serializedVersion: 2
-      Hash: e52e3ace6999020267cd44f0eb292ec3
+      Hash: d5a2f7973bc86094503b39945f0d6d27
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIQuestTrackTemplate
@@ -1436,6 +1535,12 @@ ScriptsOnlyBuild:
     className: UnityUISelectorElements
   - hash:
       serializedVersion: 2
+      Hash: 6987e53805e8a29a4a553f91e9a02ba2
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineOrbitalTransposer
+  - hash:
+      serializedVersion: 2
       Hash: 681951bf64117cdfb8271304d0372e71
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI.Wrappers
@@ -1478,6 +1583,12 @@ ScriptsOnlyBuild:
     className: SelectorUseStandardUIElements
   - hash:
       serializedVersion: 2
+      Hash: 7ca765ad7969aae95e8011264b9c4046
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTriggerAction
+  - hash:
+      serializedVersion: 2
       Hash: 7c0c81c399818ac5ec177385bb3bb6e7
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1490,10 +1601,16 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 0374afa0af2281a77cfb6b6fd6bd9dbc
+      Hash: 8eeb8ba276cb3bfc8ade14dcd71b8be3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIQuestLogWindow
+  - hash:
+      serializedVersion: 2
+      Hash: bd543bad7f9f6262f10595aadb130d22
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineComposer
   - hash:
       serializedVersion: 2
       Hash: 7cce08816b0ff204dfffa416d1751478
@@ -1526,7 +1643,7 @@ ScriptsOnlyBuild:
     className: SequencerShortcuts
   - hash:
       serializedVersion: 2
-      Hash: 82f6014edc2ba799262b037cceb6deeb
+      Hash: 6a8463306f373540dc4b6eb5dfc9a371
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUsableUI
@@ -1548,6 +1665,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: PreloadActorPortraits
+  - hash:
+      serializedVersion: 2
+      Hash: 15882a52798c275361cd0a3ada984ec5
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineDollyCart
   - hash:
       serializedVersion: 2
       Hash: 9f45e4141cf9646eed5bdca0e773d8de
@@ -1598,6 +1721,12 @@ ScriptsOnlyBuild:
     className: LuaConsole
   - hash:
       serializedVersion: 2
+      Hash: 204ea02909ea3f738dafe3ff633d2a93
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTrackedDolly
+  - hash:
+      serializedVersion: 2
       Hash: fb1599c9252b38265791d6e7908402f7
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -1614,6 +1743,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: MessageEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePipeline
   - hash:
       serializedVersion: 2
       Hash: 3c0ebb08d471fe97e9719585277d8ab4
@@ -1640,7 +1775,7 @@ ScriptsOnlyBuild:
     className: DiskSavedGameDataStorer
   - hash:
       serializedVersion: 2
-      Hash: 81daa57fe13fcafe407c1fa1bf716209
+      Hash: 65e56dbdbef2e04f1d44f585b7a15d16
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIMenuPanel
@@ -1668,6 +1803,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Demo
     className: DieOnTakeDamage
+  - hash:
+      serializedVersion: 2
+      Hash: 694d20920c0e41f567e119f7159a3644
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePath
   - hash:
       serializedVersion: 2
       Hash: ce579eb0c0f241942586701522cb4d0b
@@ -1710,6 +1851,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: PositionSaver
+  - hash:
+      serializedVersion: 2
+      Hash: acc33b6626f165e99abe40ac478ba76e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyMob
   - hash:
       serializedVersion: 2
       Hash: 4e241a8d70f4e561151cf2f2cc8ba070
@@ -1796,6 +1943,12 @@ ScriptsOnlyBuild:
     className: UITextColor
   - hash:
       serializedVersion: 2
+      Hash: 56df1fa7cea034df9863fe5a24200a32
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTargetGroup
+  - hash:
+      serializedVersion: 2
       Hash: 290b65226485991f1bc607dff25f5708
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -1820,7 +1973,7 @@ ScriptsOnlyBuild:
     className: UnityUIScrollbarEnabler
   - hash:
       serializedVersion: 2
-      Hash: 814e26a3e9ea2a34a41e4037ea71744f
+      Hash: b42ef91e54492e1139e3638bafdeb1d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SmoothCameraFollow
@@ -1898,6 +2051,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 7c792393fb82488bd20139dcc5ba26d8
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTransposer
+  - hash:
+      serializedVersion: 2
       Hash: eb05f3325df1ede60cce2640a2cd75dd
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI.Wrappers
@@ -1916,13 +2075,19 @@ ScriptsOnlyBuild:
     className: IncrementOnDestroy
   - hash:
       serializedVersion: 2
+      Hash: a66794b62dbf044668a5f102bb7908c2
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineImpulseListener
+  - hash:
+      serializedVersion: 2
       Hash: 5beaa09041ac0e419b4229f229b80c27
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIContinueButtonFastForward
   - hash:
       serializedVersion: 2
-      Hash: 3e77ff6cbb85426b88ca9e368a54bf7e
+      Hash: 18e527472411ea9963ef1bc13773fce7
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIQuestTitleButtonTemplate
@@ -1940,10 +2105,22 @@ ScriptsOnlyBuild:
     className: ConversationView
   - hash:
       serializedVersion: 2
+      Hash: e6d75f1a9bc0c6f7085df0baa077e688
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineGroupComposer
+  - hash:
+      serializedVersion: 2
       Hash: d9af91c9e41acc7347c1add4ac772104
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AimBeam
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineSameAsFollowTarget
   - hash:
       serializedVersion: 2
       Hash: 44d00ea8257dfe27048ec5a878b03023
@@ -1952,7 +2129,13 @@ ScriptsOnlyBuild:
     className: UnityUIQuestGroupTemplate
   - hash:
       serializedVersion: 2
-      Hash: d0f09ae8d7a454085808ba7941f0f947
+      Hash: 4a639215e29265dd99e4fed19e3fa9f4
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: adb7d513cf5a31e415f2f61caabe8bc5
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIButtonTemplate
@@ -1994,6 +2177,12 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
+      Hash: b639d97cb780d0d99a2bfb3ad1935732
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
       Hash: 0441cc07a73ecdc671ae7e08ed1de470
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2024,6 +2213,12 @@ ScriptsOnlyBuild:
     className: InputDeviceManager
   - hash:
       serializedVersion: 2
+      Hash: c4117cf32d2e7797e9e05272a419cd6e
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineShot
+  - hash:
+      serializedVersion: 2
       Hash: b79cbfc9cfb9bb1c6ee9e08c46b09ebb
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
@@ -2046,6 +2241,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: df21ffd1864551a3e43410f28754a73e
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineConfiner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2078,7 +2279,7 @@ ScriptsOnlyBuild:
     className: UnityUIColorText
   - hash:
       serializedVersion: 2
-      Hash: 81daa57fe13fcafe407c1fa1bf716209
+      Hash: 65e56dbdbef2e04f1d44f585b7a15d16
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIMenuPanel
@@ -2090,7 +2291,7 @@ ScriptsOnlyBuild:
     className: DialogueSystemController
   - hash:
       serializedVersion: 2
-      Hash: ad3daaaeb2033ef664f87ea8f7a4df63
+      Hash: d21d1bb98d3ef3810994024b010101a2
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUISelectorElements
@@ -2100,6 +2301,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: BarkGroupManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1e3d6222ff533d213aab144eb854a53b
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineTouchInputMapper
   - hash:
       serializedVersion: 2
       Hash: 86e6cd93c484a2ae44c9e741bd06708b
@@ -2130,6 +2337,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: StringAsset
+  - hash:
+      serializedVersion: 2
+      Hash: df76de5fb2b27007d514fdb38b91cf89
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineVirtualCamera
   - hash:
       serializedVersion: 2
       Hash: a0f4dfecff6d9d25be5b727a02e0c1a2
@@ -2204,7 +2417,7 @@ ScriptsOnlyBuild:
     className: UIScrollbarEnabler
   - hash:
       serializedVersion: 2
-      Hash: ad3daaaeb2033ef664f87ea8f7a4df63
+      Hash: d21d1bb98d3ef3810994024b010101a2
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUISelectorElements
@@ -2228,6 +2441,12 @@ ScriptsOnlyBuild:
     className: TimedEvent
   - hash:
       serializedVersion: 2
+      Hash: c2e4e30ea89913f485840be418b5894f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
+    className: SequencerCommandCinemachineTarget
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2246,6 +2465,12 @@ ScriptsOnlyBuild:
     className: UseAnimatedPortraits
   - hash:
       serializedVersion: 2
+      Hash: 6225eb0973ab0af667bc5f9d1b1b18de
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineCollider
+  - hash:
+      serializedVersion: 2
       Hash: a79031a50479efa9748c40d66dfd3f71
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2256,6 +2481,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: SpawnedObject
+  - hash:
+      serializedVersion: 2
+      Hash: bd50beb95120324d8c4e8386692b6e82
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBlenderSettings
   - hash:
       serializedVersion: 2
       Hash: 1402ad8f1222e08a5bd6021ab95c6d65
@@ -2274,6 +2505,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: ActiveSaver
+  - hash:
+      serializedVersion: 2
+      Hash: c0201dbecd85f700bcdff493a272631d
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineImpulseSource
   - hash:
       serializedVersion: 2
       Hash: d01fefcfe46410447161afb6a35e149f
@@ -2360,7 +2597,7 @@ ScriptsOnlyBuild:
     className: OverrideActorName
   - hash:
       serializedVersion: 2
-      Hash: 9b43aec2d122f68691f580416822f7b0
+      Hash: a485d5ecf2f789b638d9f44914202454
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIFoldoutTemplate
@@ -2384,7 +2621,7 @@ ScriptsOnlyBuild:
     className: DialogueActor
   - hash:
       serializedVersion: 2
-      Hash: 82f6014edc2ba799262b037cceb6deeb
+      Hash: 6a8463306f373540dc4b6eb5dfc9a371
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUsableUI
@@ -2426,10 +2663,16 @@ ScriptsOnlyBuild:
     className: AudioEffect
   - hash:
       serializedVersion: 2
-      Hash: 9b43aec2d122f68691f580416822f7b0
+      Hash: a485d5ecf2f789b638d9f44914202454
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIFoldoutTemplate
+  - hash:
+      serializedVersion: 2
+      Hash: 6ff1c52123c50b3d73f35cd0e2e65dfd
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineSmoothPath
   - hash:
       serializedVersion: 2
       Hash: 98e0187b4a72504dafaeb0d52f0812a1
@@ -2444,13 +2687,19 @@ ScriptsOnlyBuild:
     className: BarkGroupMember
   - hash:
       serializedVersion: 2
-      Hash: 0374afa0af2281a77cfb6b6fd6bd9dbc
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineHardLookAt
+  - hash:
+      serializedVersion: 2
+      Hash: 8eeb8ba276cb3bfc8ade14dcd71b8be3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIQuestLogWindow
   - hash:
       serializedVersion: 2
-      Hash: 1b5e55d6320e03e3cd46de2f28350630
+      Hash: 85ce8bdf90b674a931520d60f2e898e8
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUITextTemplate
@@ -2504,7 +2753,7 @@ ScriptsOnlyBuild:
     className: JsonDataSerializer
   - hash:
       serializedVersion: 2
-      Hash: c752271278c5672e6342287319c2e206
+      Hash: c41b4fad71682cf114ff37f0b3f16577
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardDialogueUI
@@ -2630,13 +2879,13 @@ ScriptsOnlyBuild:
     className: CollisionEvent
   - hash:
       serializedVersion: 2
-      Hash: 955245f9aebf2a52d552fc74beee38c9
+      Hash: 25e0b88342443d7d5789db3eded40c7f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIColorText
   - hash:
       serializedVersion: 2
-      Hash: 955245f9aebf2a52d552fc74beee38c9
+      Hash: 25e0b88342443d7d5789db3eded40c7f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUIColorText
@@ -2720,7 +2969,7 @@ ScriptsOnlyBuild:
     className: OverrideDialogueUI
   - hash:
       serializedVersion: 2
-      Hash: 3320d3d97dfbf2979aea93d808eb9e3d
+      Hash: 1d0ca4f276866b3ea89f4dbd143374f2
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: TextMeshProTypewriterEffect
@@ -2864,6 +3113,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FPSLimit
+  - hash:
+      serializedVersion: 2
       Hash: c326b9c6b26cb5f5225516704df5848b
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -2888,7 +3143,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 7f127061cd153cfae4b14128c740fb66
+      Hash: 53dd6f91c1258e2d00bda8762bbe0075
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: StandardUISubtitlePanel
@@ -2900,7 +3155,7 @@ ScriptsOnlyBuild:
     className: GUIImage
   - hash:
       serializedVersion: 2
-      Hash: c77da7d0d8a0e6b8319875f48d4a296b
+      Hash: 0d9b75432410a030f7e409737b04a969
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: CinemachineCameraPriorityOnDialogueEvent
@@ -2912,10 +3167,16 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 7f127061cd153cfae4b14128c740fb66
+      Hash: 53dd6f91c1258e2d00bda8762bbe0075
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUISubtitlePanel
+  - hash:
+      serializedVersion: 2
+      Hash: ffdbd5802c2482a072a88f428ad3ca9d
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBrain
   - hash:
       serializedVersion: 2
       Hash: a029db4ca8e62dfaacec27523770c235
@@ -2948,7 +3209,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: c752271278c5672e6342287319c2e206
+      Hash: c41b4fad71682cf114ff37f0b3f16577
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardDialogueUI
@@ -2972,10 +3233,22 @@ ScriptsOnlyBuild:
     className: TimedEvent
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineHardLockToTarget
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 94a6212bc97ed891bf46c9c21a0658cc
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBasicMultiChannelPerlin
   - hash:
       serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
@@ -3000,6 +3273,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: DiskSavedGameDataStorer
+  - hash:
+      serializedVersion: 2
+      Hash: 2792936179724025482dc04d68a47ca7
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineClearShot
   - hash:
       serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
@@ -3078,246 +3357,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: TextTable
-  - hash:
-      serializedVersion: 2
-      Hash: 23d669c8bf2983ca4a3df160658318a6
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineStateDrivenCamera
-  - hash:
-      serializedVersion: 2
-      Hash: a2113831d3323f931007e1b3812dc814
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineFollowZoom
-  - hash:
-      serializedVersion: 2
-      Hash: d227987243593b32ae57394d06018643
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineFixedSignal
-  - hash:
-      serializedVersion: 2
-      Hash: c80bc562de10fdbf8b2e9bcb89d80421
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineCollisionImpulseSource
-  - hash:
-      serializedVersion: 2
-      Hash: 6dd3dc11942e98c0a809c81f95fc960c
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineExternalCamera
-  - hash:
-      serializedVersion: 2
-      Hash: b5eb08b578a2f2d80bb106cbe65ab501
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineStoryboard
-  - hash:
-      serializedVersion: 2
-      Hash: 7f94fa9762524c26e64e8a5afd194a0d
-    assemblyName: Cinemachine.dll
-    namespaceName: 
-    className: CinemachineCameraOffset
-  - hash:
-      serializedVersion: 2
-      Hash: fb70f07c52fc0817edd54327b41ca12c
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineFreeLook
-  - hash:
-      serializedVersion: 2
-      Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: NoiseSettings
-  - hash:
-      serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Cinemachine.dll
-    namespaceName: 
-    className: CinemachineTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 1cdde0c3d8008dfe81d27e4c955d4fe7
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineFramingTransposer
-  - hash:
-      serializedVersion: 2
-      Hash: 3c2b11a8027702f7fef4a819d8b9191a
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachinePOV
-  - hash:
-      serializedVersion: 2
-      Hash: 6987e53805e8a29a4a553f91e9a02ba2
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineOrbitalTransposer
-  - hash:
-      serializedVersion: 2
-      Hash: 7ca765ad7969aae95e8011264b9c4046
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineTriggerAction
-  - hash:
-      serializedVersion: 2
-      Hash: bd543bad7f9f6262f10595aadb130d22
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineComposer
-  - hash:
-      serializedVersion: 2
-      Hash: 15882a52798c275361cd0a3ada984ec5
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineDollyCart
-  - hash:
-      serializedVersion: 2
-      Hash: 204ea02909ea3f738dafe3ff633d2a93
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineTrackedDolly
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachinePipeline
-  - hash:
-      serializedVersion: 2
-      Hash: 694d20920c0e41f567e119f7159a3644
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachinePath
-  - hash:
-      serializedVersion: 2
-      Hash: 56df1fa7cea034df9863fe5a24200a32
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineTargetGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 7c792393fb82488bd20139dcc5ba26d8
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineTransposer
-  - hash:
-      serializedVersion: 2
-      Hash: a66794b62dbf044668a5f102bb7908c2
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineImpulseListener
-  - hash:
-      serializedVersion: 2
-      Hash: e6d75f1a9bc0c6f7085df0baa077e688
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineGroupComposer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineSameAsFollowTarget
-  - hash:
-      serializedVersion: 2
-      Hash: 4a639215e29265dd99e4fed19e3fa9f4
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineBlendListCamera
-  - hash:
-      serializedVersion: 2
-      Hash: b639d97cb780d0d99a2bfb3ad1935732
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineMixingCamera
-  - hash:
-      serializedVersion: 2
-      Hash: c4117cf32d2e7797e9e05272a419cd6e
-    assemblyName: Cinemachine.dll
-    namespaceName: 
-    className: CinemachineShot
-  - hash:
-      serializedVersion: 2
-      Hash: df21ffd1864551a3e43410f28754a73e
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineConfiner
-  - hash:
-      serializedVersion: 2
-      Hash: 1e3d6222ff533d213aab144eb854a53b
-    assemblyName: Cinemachine.dll
-    namespaceName: 
-    className: CinemachineTouchInputMapper
-  - hash:
-      serializedVersion: 2
-      Hash: df76de5fb2b27007d514fdb38b91cf89
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineVirtualCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 6225eb0973ab0af667bc5f9d1b1b18de
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineCollider
-  - hash:
-      serializedVersion: 2
-      Hash: bd50beb95120324d8c4e8386692b6e82
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineBlenderSettings
-  - hash:
-      serializedVersion: 2
-      Hash: c0201dbecd85f700bcdff493a272631d
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineImpulseSource
-  - hash:
-      serializedVersion: 2
-      Hash: 6ff1c52123c50b3d73f35cd0e2e65dfd
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineSmoothPath
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineHardLookAt
-  - hash:
-      serializedVersion: 2
-      Hash: ffdbd5802c2482a072a88f428ad3ca9d
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineBrain
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineHardLockToTarget
-  - hash:
-      serializedVersion: 2
-      Hash: 94a6212bc97ed891bf46c9c21a0658cc
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineBasicMultiChannelPerlin
-  - hash:
-      serializedVersion: 2
-      Hash: 2792936179724025482dc04d68a47ca7
-    assemblyName: Cinemachine.dll
-    namespaceName: Cinemachine
-    className: CinemachineClearShot
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FPSLimit
   platform: 5
   scenePathNames:
   - Assets/Scenes/3. Mars.unity

@@ -6,8 +6,12 @@ public class CharacterBlaster : MonoBehaviour
 {
     public Transform blaster1;
     public Transform blaster2;
+    public Transform laser1;
+    public Transform laser2;
+    public AudioSource laserShot;
     public AudioSource missileAudio;
     public GameObject missilePrefab;
+    public GameObject laserPrefab;
     private bool GamePaused = false;
 
     // Update is called once per frame

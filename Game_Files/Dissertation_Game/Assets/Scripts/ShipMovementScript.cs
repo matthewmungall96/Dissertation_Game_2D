@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipMovementScript : MonoBehaviour
 {
-    public bool GamePaused = false;
+    private bool GamePaused = false;
     // Update is called once per frame
     void Update()
     {

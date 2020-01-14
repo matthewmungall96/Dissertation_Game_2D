@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6378343381345104538}
   - component: {fileID: 8490928104785180035}
   - component: {fileID: 4193848343349485463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Missile (1)
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 98be93167ed6cd54d82a8e882da6f3e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -138,8 +138,6 @@ MonoBehaviour:
   rb: {fileID: 6378343381345104538}
   damage: 30
   lifetime: 3
-  missleSound: {fileID: 3228625360835478137, guid: 8b7922db3c923ea47af04ecc2fb1a2cf,
-    type: 3}
 --- !u!1 &6354196374837125838
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +149,7 @@ GameObject:
   - component: {fileID: 9169051498170625609}
   - component: {fileID: 3361308244579088514}
   - component: {fileID: 2097631809438087048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4868,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
