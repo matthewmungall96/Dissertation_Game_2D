@@ -5,6 +5,10 @@ using UnityEngine;
 public class ShipMovementScript : MonoBehaviour
 {
     private bool GamePaused = false;
+    public GameObject thruster1;
+    public GameObject thruster2;
+    private bool thrustersOn = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +52,12 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 gameObject.transform.Translate(Vector3.down * 0.1f);
+                thrustersOn = true;
+            }
+
+            else
+            {
+                thrustersOn = false;
             }
         }
 
@@ -55,7 +65,19 @@ public class ShipMovementScript : MonoBehaviour
         {
             return;
         }
-        
+
+        if (thrustersOn == true)
+        {
+            thruster1.SetActive(true);
+            thruster2.SetActive(true);
+        }
+
+        else
+        {
+            thruster1.SetActive(false);
+            thruster2.SetActive(false);
+        }
+
     }
 
     public void OnPause()

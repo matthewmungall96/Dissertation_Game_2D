@@ -2147,6 +2147,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 839282998}
   parallaxEffect: 1
+--- !u!1 &1229431190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5507958638063353835, guid: b009a174d97fde94194c71b23052de19,
+    type: 3}
+  m_PrefabInstance: {fileID: 8147466287894903108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1312000902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7052773962634339566, guid: b009a174d97fde94194c71b23052de19,
+    type: 3}
+  m_PrefabInstance: {fileID: 8147466287894903108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1536287309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3084,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.98
       objectReference: {fileID: 0}
+    - target: {fileID: 8147466287915419120, guid: b009a174d97fde94194c71b23052de19,
+        type: 3}
+      propertyPath: thruster1
+      value: 
+      objectReference: {fileID: 1229431190}
+    - target: {fileID: 8147466287915419120, guid: b009a174d97fde94194c71b23052de19,
+        type: 3}
+      propertyPath: thruster2
+      value: 
+      objectReference: {fileID: 1312000902}
     - target: {fileID: 8147466287915419121, guid: b009a174d97fde94194c71b23052de19,
         type: 3}
       propertyPath: m_SortingOrder

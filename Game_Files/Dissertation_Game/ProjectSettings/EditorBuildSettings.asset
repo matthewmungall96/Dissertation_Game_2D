@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/3. Mars.unity
-    guid: 466d783909eef2f48a045a467232ab46
+    path: Assets/Scenes/1. Main Menu.unity
+    guid: 5d5d067592a94eb4980043b34a73353c
   m_configObjects: {}
