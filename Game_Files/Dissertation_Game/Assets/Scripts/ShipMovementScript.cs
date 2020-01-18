@@ -55,6 +55,11 @@ public class ShipMovementScript : MonoBehaviour
                 thrustersOn = true;
             }
 
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                GamePaused = true;
+            }
+
             else
             {
                 thrustersOn = false;

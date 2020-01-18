@@ -31,6 +31,11 @@ public class CharacterBlaster : MonoBehaviour
             }
 
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GamePaused = true;
+        }
     }
 
     void Shoot()
