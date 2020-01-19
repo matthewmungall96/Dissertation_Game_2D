@@ -12,7 +12,7 @@ public class ShipMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GamePaused == false)
+        if (GamePaused == false && PlayerHealth.playerHealthNo > 0)
         {
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -53,16 +53,21 @@ public class ShipMovementScript : MonoBehaviour
             {
                 gameObject.transform.Translate(Vector3.down * 0.1f);
                 thrustersOn = true;
+                    if (thrustersOn == true)
+                    {
+                        thruster1.SetActive(true);
+                        thruster2.SetActive(true);
+                    }
+
+                    else
+                    {
+                        thrustersOn = false;
+                    }
             }
 
             if (Input.GetKeyDown(KeyCode.P))
             {
                 GamePaused = true;
-            }
-
-            else
-            {
-                thrustersOn = false;
             }
         }
 
@@ -71,11 +76,7 @@ public class ShipMovementScript : MonoBehaviour
             return;
         }
 
-        if (thrustersOn == true)
-        {
-            thruster1.SetActive(true);
-            thruster2.SetActive(true);
-        }
+
 
         else
         {
