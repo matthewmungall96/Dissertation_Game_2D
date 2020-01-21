@@ -118,7 +118,6 @@ public class LevelUnlocks : MonoBehaviour
         MarsC2.SetActive(true);
         MarsC1.SetActive(false);
         MarsT1.SetActive(true);
-        Debug.Log("Mars Level 1 Complete");
         if (LevelManager.Mars_Levels_Complete == 3)
         {
             return;
@@ -148,6 +147,7 @@ public class LevelUnlocks : MonoBehaviour
     public void Mars_3_Complete()
     {
         Mars_Boss_Button.SetActive(true);
+        MarsBC.SetActive(true);
         MarsC3.SetActive(false);
         MarsT3.SetActive(true);
         if (LevelManager.Mars_Levels_Complete == 3)
