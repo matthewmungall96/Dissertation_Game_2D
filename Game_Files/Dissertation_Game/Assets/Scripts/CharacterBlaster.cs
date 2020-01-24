@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterBlaster : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class CharacterBlaster : MonoBehaviour
     public AudioSource missileAudio;
     public GameObject missilePrefab;
     public GameObject laserPrefab;
+    public Image characterEnergy;
     private bool GamePaused = false;
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class CharacterBlaster : MonoBehaviour
                 return;
             }
 
-            else if (GamePaused == false && PlayerHealth.playerHealthNo > 0)
+            else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy > 0)
             {
                 ShootMissile();
             }
@@ -38,9 +40,8 @@ public class CharacterBlaster : MonoBehaviour
                 return;
             }
 
-            else if (GamePaused == false)
+            else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy > 0)
             {
-                laserAudio.Play();
                 ShootLaser();
             }
         }
@@ -49,19 +50,51 @@ public class CharacterBlaster : MonoBehaviour
         {
             GamePaused = true;
         }
+
+        if (GamePaused == true)
+        {
+            return;
+        }
+        else 
+        {
+            if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy)
+            {
+                ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 1;
+                UpdatePlayerEnergy();
+            }
+
+            else
+            {
+                UpdatePlayerEnergy();
+                return;
+            }
+        }
+
+        Debug.Log("Total Energy" + ShootingHealth.ShipEnergy);
     }
 
     public void ShootMissile()
     {
+        ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy - 30;
         missileAudio.Play();
         Instantiate(missilePrefab, blaster1.position, blaster1.rotation);
         Instantiate(missilePrefab, blaster2.position, blaster2.rotation);
+        UpdatePlayerEnergy();
     }
 
-    void ShootLaser()
+    public void ShootLaser()
     {
+        ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy - 15;
+        laserAudio.Play();
         Instantiate(laserPrefab, laser1.position, laser1.rotation);
         Instantiate(laserPrefab, laser2.position, laser2.rotation);
+        UpdatePlayerEnergy();
+    }
+
+    private void UpdatePlayerEnergy()
+    {
+        float ratio = ShootingHealth.ShipEnergy / ShootingHealth.maxShipEnergy;
+        characterEnergy.rectTransform.localScale = new Vector3(ratio, 1, 1);
     }
 
     public void OnPause()
