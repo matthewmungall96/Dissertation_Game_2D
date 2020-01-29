@@ -21,7 +21,7 @@ public class ShipMovementScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.S))
             {
-                gameObject.transform.Translate(Vector3.left * 0.1f);
+                gameObject.transform.Translate(Vector3.right * 0.05f);
             }
 
             if (Input.GetKeyDown(KeyCode.W))
@@ -31,7 +31,7 @@ public class ShipMovementScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.W))
             {
-                gameObject.transform.Translate(Vector3.right * 0.1f);
+                gameObject.transform.Translate(Vector3.left * 0.05f);
             }
 
             if (Input.GetKeyDown(KeyCode.A))
@@ -41,7 +41,7 @@ public class ShipMovementScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.A))
             {
-                gameObject.transform.Translate(Vector3.up * 0.1f);
+                gameObject.transform.Translate(Vector3.down * 0.05f);
             }
 
             if (Input.GetKeyDown(KeyCode.D))
@@ -51,7 +51,7 @@ public class ShipMovementScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.D))
             {
-                gameObject.transform.Translate(Vector3.down * 0.1f);
+                gameObject.transform.Translate(Vector3.up * 0.05f);
                 thrustersOn = true;
                     if (thrustersOn == true)
                     {

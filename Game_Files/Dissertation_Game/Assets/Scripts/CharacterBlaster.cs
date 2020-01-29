@@ -15,10 +15,12 @@ public class CharacterBlaster : MonoBehaviour
     public GameObject laserPrefab;
     public Image characterEnergy;
     private bool GamePaused = false;
-
+    private 
     // Update is called once per frame
     void Update()
     {
+        UpdatePlayerEnergy();
+
         if (Input.GetButtonDown("Fire1"))
         {
             if (GamePaused == true)
@@ -59,7 +61,7 @@ public class CharacterBlaster : MonoBehaviour
         {
             if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy)
             {
-                ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 1;
+                ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.25f;
                 UpdatePlayerEnergy();
             }
 

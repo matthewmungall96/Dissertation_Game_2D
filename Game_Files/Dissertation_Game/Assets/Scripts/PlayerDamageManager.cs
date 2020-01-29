@@ -9,6 +9,8 @@ public class PlayerDamageManager : MonoBehaviour
     public GameObject PlayerDeathScreen;
     void Update()
     {
+        UpdatePlayerHealth();
+
         if (PlayerHealth.playerHealthNo == 0)
         {
             PlayerDeath();
