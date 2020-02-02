@@ -7,13 +7,16 @@ public class PlayerDamageManager : MonoBehaviour
 {
     public Image playerHealthBar;
     public GameObject PlayerDeathScreen;
+    public Animator shipExplosion;
+    private int timesDied = 0;
     void Update()
     {
         UpdatePlayerHealth();
 
-        if (PlayerHealth.playerHealthNo == 0)
+        if (PlayerHealth.playerHealthNo == 0 && PlayerHealth.playerHasDied == false)
         {
             PlayerDeath();
+            Debug.Log("Times Died " + timesDied++);
         }
     }
 
@@ -21,7 +24,6 @@ public class PlayerDamageManager : MonoBehaviour
     {
         float ratio = PlayerHealth.playerHealthNo / PlayerHealth.playerHealthMax;
         playerHealthBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
-      
     }
 
     public void TakeDamage()
@@ -35,14 +37,20 @@ public class PlayerDamageManager : MonoBehaviour
 
         else
         {
-            Debug.Log("Player has died!");
             return;
         }
 
     }
 
+    public void WrongAnswer()
+    {
+        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo / 100 * 50;
+    }
+
     public void PlayerDeath()
     {
+        PlayerHealth.playerHasDied = true;
+        shipExplosion.SetBool("IsDead", true);
         PlayerDeathScreen.SetActive(true);
     }
 }

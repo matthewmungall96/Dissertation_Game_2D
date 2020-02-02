@@ -52,17 +52,22 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 gameObject.transform.Translate(Vector3.up * 0.05f);
-                thrustersOn = true;
-                    if (thrustersOn == true)
-                    {
-                        thruster1.SetActive(true);
-                        thruster2.SetActive(true);
-                    }
+            }
 
-                    else
-                    {
-                        thrustersOn = false;
-                    }
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            {
+                gameObject.transform.Translate(Vector3.up * 0.075f);
+                thrustersOn = true;
+                if (thrustersOn == true)
+                {
+                    thruster1.SetActive(true);
+                    thruster2.SetActive(true);
+                }
+
+                else
+                {
+                    thrustersOn = false;
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.P))
