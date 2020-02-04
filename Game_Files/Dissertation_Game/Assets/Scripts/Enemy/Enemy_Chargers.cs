@@ -60,7 +60,7 @@ public class Enemy_Chargers : MonoBehaviour
         {
             Debug.Log("Suicide");
             health = 0;
-            PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo - 10;
+            PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo - 30;
             OnDeath();
         }
     }

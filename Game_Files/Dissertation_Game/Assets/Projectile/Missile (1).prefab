@@ -138,7 +138,7 @@ MonoBehaviour:
   rb: {fileID: 6378343381345104538}
   damage: 30
   lifetime: 3
-  impactEffect: {fileID: 8881201919328146619, guid: 135c6bec0c9e2864e8831c3e66f57f9d,
+  impactEffect: {fileID: 6252845758580529774, guid: 7160d1e8e52456d429b5d055f455d98a,
     type: 3}
 --- !u!1 &6354196374837125838
 GameObject:

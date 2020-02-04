@@ -13,7 +13,7 @@ public class PlayerDamageManager : MonoBehaviour
     {
         UpdatePlayerHealth();
 
-        if (PlayerHealth.playerHealthNo == 0 && PlayerHealth.playerHasDied == false)
+        if (PlayerHealth.playerHealthNo <= 0 && PlayerHealth.playerHasDied == false)
         {
             PlayerDeath();
             Debug.Log("Times Died " + timesDied++);
@@ -52,5 +52,12 @@ public class PlayerDamageManager : MonoBehaviour
         PlayerHealth.playerHasDied = true;
         shipExplosion.SetBool("IsDead", true);
         PlayerDeathScreen.SetActive(true);
+        StartCoroutine(PlayerDestroy());
+    }
+
+    IEnumerator PlayerDestroy()
+    {
+        yield return new WaitForSeconds(0);
+        Destroy(gameObject);
     }
 }

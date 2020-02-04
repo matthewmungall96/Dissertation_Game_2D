@@ -12,10 +12,6 @@ public class LevelUnlocker : MonoBehaviour
     {
         LevelManager.Mars_Level_2 = true;
     }
-    public void Mars_Level_3()
-    {
-        LevelManager.Mars_Level_3 = true;
-    }
     public void Mars_Level_Boss()
     {
         LevelManager.Mars_Boss_Completed = true;
@@ -27,10 +23,6 @@ public class LevelUnlocker : MonoBehaviour
     public void Jupiter_Level_2()
     {
         LevelManager.Jupiter_Level_2 = true;
-    }
-    public void Jupiter_Level_3()
-    {
-        LevelManager.Jupiter_Level_3 = true;
     }
     public void Jupiter_Level_Boss()
     {
@@ -44,10 +36,6 @@ public class LevelUnlocker : MonoBehaviour
     public void Venus_Level_2()
     {
         LevelManager.Venus_Level_2 = true;
-    }
-    public void Venus_Level_3()
-    {
-        LevelManager.Venus_Level_3 = true;
     }
     public void Venus_Level_Boss()
     {

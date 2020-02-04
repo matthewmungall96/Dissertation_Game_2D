@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+[RequireComponent(typeof(BoxCollider2D))]
+public class OnTriggerEvent : MonoBehaviour
+{
+    public UnityEvent onTriggered;
+    public bool trigger_once;
+    private bool isTriggered;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (trigger_once && isTriggered)
+            return;
+
+        if (other.tag == "Player")
+        {
+            onTriggered.Invoke();
+            isTriggered = true;
+        }
+    }
+}

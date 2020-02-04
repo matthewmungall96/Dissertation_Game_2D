@@ -16,20 +16,25 @@ public class ProjectileBehaviour : MonoBehaviour
         Disappear();
     }
 
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.tag == "player")
+        if (collision.CompareTag ("Player"))
         {
             return;
         }
 
-        if (gameObject.tag == "Enemy")
+        if (collision.CompareTag("Enemy"))
         {
-            Debug.Log(hitInfo.name);
             Instantiate(impactEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
+            StartCoroutine(DeathWait());
         }
 
+    }
+
+    IEnumerator DeathWait()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 
     private void Disappear()
