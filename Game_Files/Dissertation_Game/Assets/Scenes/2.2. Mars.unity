@@ -357,7 +357,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!4 &25136177
 Transform:
   m_ObjectHideFlags: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!114 &25136181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!4 &87371501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 869897905340756547, guid: 7f1d41f910bcdf341ab8d30d21d719b8,
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!61 &397044482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2900,7 +2900,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 1921b24cf069d4d40b37b7e92aa12174, type: 2}
 --- !u!61 &805621128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4021,7 +4021,7 @@ PrefabInstance:
         type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30,
+      objectReference: {fileID: 11400000, guid: 1921b24cf069d4d40b37b7e92aa12174,
         type: 2}
     - target: {fileID: 7475115224106988107, guid: 72b98c732a98a534b96942b9858c7530,
         type: 3}
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 1921b24cf069d4d40b37b7e92aa12174, type: 2}
 --- !u!114 &1033116040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4315,7 +4315,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 1921b24cf069d4d40b37b7e92aa12174, type: 2}
 --- !u!61 &1033116041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4859,7 +4859,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!50 &1228176196
 Rigidbody2D:
   serializedVersion: 4
@@ -6204,7 +6204,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 897d4535799094541b46883a83793b30, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!61 &1814896810
 BoxCollider2D:
   m_ObjectHideFlags: 0
