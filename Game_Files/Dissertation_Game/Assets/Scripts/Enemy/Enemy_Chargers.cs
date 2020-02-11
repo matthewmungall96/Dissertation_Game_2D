@@ -17,6 +17,7 @@ public class Enemy_Chargers : MonoBehaviour
     {
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         sr = GetComponent<SpriteRenderer>();
+        spawn_crashers.isAlive = true;
         MatDefault = sr.material;
     }
 
@@ -79,6 +80,7 @@ public class Enemy_Chargers : MonoBehaviour
 
     IEnumerator DeathWait()
     {
+        spawn_crashers.isAlive = false;
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }

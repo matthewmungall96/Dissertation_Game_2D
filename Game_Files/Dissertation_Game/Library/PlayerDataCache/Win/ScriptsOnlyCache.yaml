@@ -50,20 +50,36 @@ ScriptsOnlyBuild:
     - PixelCrushers.Wrappers.UILocalizationManager
     - PixelCrushers.Wrappers.UIPanel
     Assembly-CSharp.dll:
+    - Asteroid
+    - AsteroidSpawn
     - CharacterBlaster
-    - EnemyMob
+    - EmeraldAI.CameraShake
+    - EmeraldAI.CombatTextSystem
+    - EmeraldAI.EmeraldAICombatTextData
+    - EmeraldAI.Utility.CombatText
+    - EmeraldAI.Utility.CombatTextAnimator
+    - EmeraldAI.Utility.EmeraldAIDamageOverTime
+    - Enemy_Chargers
+    - Enemy_Projectile
     - FPSLimit
+    - Impact_Death
     - LevelRestart
     - LevelUnlocker
     - LevelUnlocks
+    - Lioskohaa
     - MainMenuConsole
     - Menu_Open
+    - Noszinaa
     - Parallax
+    - Pixel_Perfect
     - PlayerDamageManager
     - ProjectileBehaviour
     - SceneTransit
     - ShipMovementScript
     - SmoothCameraFollow
+    - Spectro
+    AstarPathfindingProject.dll:
+    - AstarPath
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -115,9 +131,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -131,60 +151,78 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 576}
+      Script: {instanceID: 590}
     - Class: 114
-      Script: {instanceID: 11158}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 11380}
-    - Class: 114
-      Script: {instanceID: 11488}
-    - Class: 114
-      Script: {instanceID: 11550}
-    - Class: 114
-      Script: {instanceID: 11618}
-    - Class: 114
-      Script: {instanceID: 11684}
-    - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 12078}
     - Class: 114
       Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12440}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12802}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 13006}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 13316}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 13534}
+      Script: {instanceID: 12700}
     - Class: 114
-      Script: {instanceID: 13906}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 14010}
+      Script: {instanceID: 13172}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 13308}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 13334}
+    - Class: 114
+      Script: {instanceID: 13384}
+    - Class: 114
+      Script: {instanceID: 13734}
+    - Class: 114
+      Script: {instanceID: 13824}
+    - Class: 114
+      Script: {instanceID: 13962}
+    - Class: 114
+      Script: {instanceID: 14296}
+    - Class: 114
+      Script: {instanceID: 14356}
+    - Class: 114
+      Script: {instanceID: 14398}
+    - Class: 114
+      Script: {instanceID: 14430}
+    - Class: 114
+      Script: {instanceID: 14538}
     - Class: 114
       Script: {instanceID: 14946}
     - Class: 114
-      Script: {instanceID: 15088}
+      Script: {instanceID: 15062}
     - Class: 114
-      Script: {instanceID: 15146}
+      Script: {instanceID: 15374}
     - Class: 114
-      Script: {instanceID: 15162}
+      Script: {instanceID: 15436}
     - Class: 114
-      Script: {instanceID: 46730}
+      Script: {instanceID: 15720}
     - Class: 114
-      Script: {instanceID: 66410}
+      Script: {instanceID: 15784}
     - Class: 114
-      Script: {instanceID: 157664}
+      Script: {instanceID: 16134}
+    - Class: 114
+      Script: {instanceID: 16148}
+    - Class: 114
+      Script: {instanceID: 16284}
+    - Class: 114
+      Script: {instanceID: 16348}
+    - Class: 114
+      Script: {instanceID: 16364}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,6 +239,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     - Class: 241
       Script: {instanceID: 0}
     - Class: 243
@@ -208,6 +248,215 @@ ScriptsOnlyBuild:
     - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/2.1. Mars.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 590}
+    - Class: 114
+      Script: {instanceID: 11952}
+    - Class: 114
+      Script: {instanceID: 11962}
+    - Class: 114
+      Script: {instanceID: 11982}
+    - Class: 114
+      Script: {instanceID: 12014}
+    - Class: 114
+      Script: {instanceID: 12036}
+    - Class: 114
+      Script: {instanceID: 12328}
+    - Class: 114
+      Script: {instanceID: 12376}
+    - Class: 114
+      Script: {instanceID: 12378}
+    - Class: 114
+      Script: {instanceID: 12432}
+    - Class: 114
+      Script: {instanceID: 12444}
+    - Class: 114
+      Script: {instanceID: 12518}
+    - Class: 114
+      Script: {instanceID: 12676}
+    - Class: 114
+      Script: {instanceID: 12712}
+    - Class: 114
+      Script: {instanceID: 12716}
+    - Class: 114
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 13110}
+    - Class: 114
+      Script: {instanceID: 13172}
+    - Class: 114
+      Script: {instanceID: 13196}
+    - Class: 114
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13302}
+    - Class: 114
+      Script: {instanceID: 13334}
+    - Class: 114
+      Script: {instanceID: 13378}
+    - Class: 114
+      Script: {instanceID: 13384}
+    - Class: 114
+      Script: {instanceID: 13536}
+    - Class: 114
+      Script: {instanceID: 13638}
+    - Class: 114
+      Script: {instanceID: 13652}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13766}
+    - Class: 114
+      Script: {instanceID: 13784}
+    - Class: 114
+      Script: {instanceID: 13834}
+    - Class: 114
+      Script: {instanceID: 13852}
+    - Class: 114
+      Script: {instanceID: 14216}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14296}
+    - Class: 114
+      Script: {instanceID: 14312}
+    - Class: 114
+      Script: {instanceID: 14324}
+    - Class: 114
+      Script: {instanceID: 14356}
+    - Class: 114
+      Script: {instanceID: 14422}
+    - Class: 114
+      Script: {instanceID: 14512}
+    - Class: 114
+      Script: {instanceID: 14596}
+    - Class: 114
+      Script: {instanceID: 14618}
+    - Class: 114
+      Script: {instanceID: 14688}
+    - Class: 114
+      Script: {instanceID: 14694}
+    - Class: 114
+      Script: {instanceID: 14722}
+    - Class: 114
+      Script: {instanceID: 14784}
+    - Class: 114
+      Script: {instanceID: 14792}
+    - Class: 114
+      Script: {instanceID: 14846}
+    - Class: 114
+      Script: {instanceID: 14858}
+    - Class: 114
+      Script: {instanceID: 14866}
+    - Class: 114
+      Script: {instanceID: 15014}
+    - Class: 114
+      Script: {instanceID: 15026}
+    - Class: 114
+      Script: {instanceID: 15140}
+    - Class: 114
+      Script: {instanceID: 15152}
+    - Class: 114
+      Script: {instanceID: 15420}
+    - Class: 114
+      Script: {instanceID: 15436}
+    - Class: 114
+      Script: {instanceID: 15480}
+    - Class: 114
+      Script: {instanceID: 15548}
+    - Class: 114
+      Script: {instanceID: 15656}
+    - Class: 114
+      Script: {instanceID: 15794}
+    - Class: 114
+      Script: {instanceID: 16018}
+    - Class: 114
+      Script: {instanceID: 16022}
+    - Class: 114
+      Script: {instanceID: 16148}
+    - Class: 114
+      Script: {instanceID: 16150}
+    - Class: 114
+      Script: {instanceID: 16184}
+    - Class: 114
+      Script: {instanceID: 16198}
+    - Class: 114
+      Script: {instanceID: 16234}
+    - Class: 114
+      Script: {instanceID: 16252}
+    - Class: 114
+      Script: {instanceID: 16284}
+    - Class: 114
+      Script: {instanceID: 16290}
+    - Class: 114
+      Script: {instanceID: 16312}
+    - Class: 114
+      Script: {instanceID: 16348}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/2.2. Mars.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -247,141 +496,368 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 576}
+      Script: {instanceID: 590}
     - Class: 114
-      Script: {instanceID: 11158}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 11186}
+      Script: {instanceID: 11982}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 12014}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 12036}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 12518}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 11868}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12776}
     - Class: 114
-      Script: {instanceID: 12296}
+      Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 12350}
+      Script: {instanceID: 13172}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 12440}
+      Script: {instanceID: 13232}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 13302}
     - Class: 114
-      Script: {instanceID: 12614}
+      Script: {instanceID: 13334}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 12736}
+      Script: {instanceID: 13384}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 13536}
     - Class: 114
-      Script: {instanceID: 12832}
+      Script: {instanceID: 13638}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 13222}
-    - Class: 114
-      Script: {instanceID: 13240}
-    - Class: 114
-      Script: {instanceID: 13300}
-    - Class: 114
-      Script: {instanceID: 13316}
-    - Class: 114
-      Script: {instanceID: 13330}
-    - Class: 114
-      Script: {instanceID: 13342}
-    - Class: 114
-      Script: {instanceID: 13426}
-    - Class: 114
-      Script: {instanceID: 13508}
-    - Class: 114
-      Script: {instanceID: 13588}
-    - Class: 114
-      Script: {instanceID: 13670}
-    - Class: 114
-      Script: {instanceID: 13676}
-    - Class: 114
-      Script: {instanceID: 13700}
-    - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 13762}
     - Class: 114
       Script: {instanceID: 13766}
     - Class: 114
-      Script: {instanceID: 13814}
+      Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 13826}
+      Script: {instanceID: 13834}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13852}
     - Class: 114
-      Script: {instanceID: 13976}
+      Script: {instanceID: 14216}
     - Class: 114
-      Script: {instanceID: 14082}
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14296}
     - Class: 114
       Script: {instanceID: 14312}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 14324}
     - Class: 114
-      Script: {instanceID: 14364}
+      Script: {instanceID: 14356}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14422}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14512}
     - Class: 114
-      Script: {instanceID: 14634}
+      Script: {instanceID: 14596}
     - Class: 114
-      Script: {instanceID: 14840}
+      Script: {instanceID: 14688}
     - Class: 114
-      Script: {instanceID: 14960}
+      Script: {instanceID: 14694}
     - Class: 114
-      Script: {instanceID: 14962}
+      Script: {instanceID: 14722}
     - Class: 114
-      Script: {instanceID: 14996}
+      Script: {instanceID: 14784}
     - Class: 114
-      Script: {instanceID: 15010}
+      Script: {instanceID: 14792}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 15064}
+      Script: {instanceID: 14858}
     - Class: 114
-      Script: {instanceID: 15088}
+      Script: {instanceID: 14866}
     - Class: 114
-      Script: {instanceID: 15114}
+      Script: {instanceID: 15026}
     - Class: 114
-      Script: {instanceID: 15146}
+      Script: {instanceID: 15054}
     - Class: 114
-      Script: {instanceID: 30308}
+      Script: {instanceID: 15140}
     - Class: 114
-      Script: {instanceID: 46730}
+      Script: {instanceID: 15152}
     - Class: 114
-      Script: {instanceID: 118698}
+      Script: {instanceID: 15420}
     - Class: 114
-      Script: {instanceID: 146128}
+      Script: {instanceID: 15436}
     - Class: 114
-      Script: {instanceID: 157664}
+      Script: {instanceID: 15480}
+    - Class: 114
+      Script: {instanceID: 15548}
+    - Class: 114
+      Script: {instanceID: 15656}
+    - Class: 114
+      Script: {instanceID: 15750}
+    - Class: 114
+      Script: {instanceID: 15794}
+    - Class: 114
+      Script: {instanceID: 16018}
+    - Class: 114
+      Script: {instanceID: 16022}
+    - Class: 114
+      Script: {instanceID: 16148}
+    - Class: 114
+      Script: {instanceID: 16150}
+    - Class: 114
+      Script: {instanceID: 16184}
+    - Class: 114
+      Script: {instanceID: 16198}
+    - Class: 114
+      Script: {instanceID: 16234}
+    - Class: 114
+      Script: {instanceID: 16252}
+    - Class: 114
+      Script: {instanceID: 16284}
+    - Class: 114
+      Script: {instanceID: 16290}
+    - Class: 114
+      Script: {instanceID: 16312}
+    - Class: 114
+      Script: {instanceID: 16348}
+    - Class: 114
+      Script: {instanceID: 45112}
+    - Class: 114
+      Script: {instanceID: 80960}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/2.B. Mars.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 96
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 590}
+    - Class: 114
+      Script: {instanceID: 11952}
+    - Class: 114
+      Script: {instanceID: 11962}
+    - Class: 114
+      Script: {instanceID: 11982}
+    - Class: 114
+      Script: {instanceID: 12014}
+    - Class: 114
+      Script: {instanceID: 12036}
+    - Class: 114
+      Script: {instanceID: 12328}
+    - Class: 114
+      Script: {instanceID: 12376}
+    - Class: 114
+      Script: {instanceID: 12378}
+    - Class: 114
+      Script: {instanceID: 12432}
+    - Class: 114
+      Script: {instanceID: 12444}
+    - Class: 114
+      Script: {instanceID: 12518}
+    - Class: 114
+      Script: {instanceID: 12676}
+    - Class: 114
+      Script: {instanceID: 12712}
+    - Class: 114
+      Script: {instanceID: 12716}
+    - Class: 114
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 13110}
+    - Class: 114
+      Script: {instanceID: 13172}
+    - Class: 114
+      Script: {instanceID: 13196}
+    - Class: 114
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13302}
+    - Class: 114
+      Script: {instanceID: 13334}
+    - Class: 114
+      Script: {instanceID: 13378}
+    - Class: 114
+      Script: {instanceID: 13384}
+    - Class: 114
+      Script: {instanceID: 13536}
+    - Class: 114
+      Script: {instanceID: 13638}
+    - Class: 114
+      Script: {instanceID: 13652}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13762}
+    - Class: 114
+      Script: {instanceID: 13766}
+    - Class: 114
+      Script: {instanceID: 13784}
+    - Class: 114
+      Script: {instanceID: 13834}
+    - Class: 114
+      Script: {instanceID: 13852}
+    - Class: 114
+      Script: {instanceID: 14216}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14296}
+    - Class: 114
+      Script: {instanceID: 14312}
+    - Class: 114
+      Script: {instanceID: 14324}
+    - Class: 114
+      Script: {instanceID: 14356}
+    - Class: 114
+      Script: {instanceID: 14422}
+    - Class: 114
+      Script: {instanceID: 14512}
+    - Class: 114
+      Script: {instanceID: 14596}
+    - Class: 114
+      Script: {instanceID: 14688}
+    - Class: 114
+      Script: {instanceID: 14694}
+    - Class: 114
+      Script: {instanceID: 14722}
+    - Class: 114
+      Script: {instanceID: 14784}
+    - Class: 114
+      Script: {instanceID: 14792}
+    - Class: 114
+      Script: {instanceID: 14846}
+    - Class: 114
+      Script: {instanceID: 14858}
+    - Class: 114
+      Script: {instanceID: 14866}
+    - Class: 114
+      Script: {instanceID: 15026}
+    - Class: 114
+      Script: {instanceID: 15140}
+    - Class: 114
+      Script: {instanceID: 15152}
+    - Class: 114
+      Script: {instanceID: 15420}
+    - Class: 114
+      Script: {instanceID: 15436}
+    - Class: 114
+      Script: {instanceID: 15480}
+    - Class: 114
+      Script: {instanceID: 15548}
+    - Class: 114
+      Script: {instanceID: 15656}
+    - Class: 114
+      Script: {instanceID: 15750}
+    - Class: 114
+      Script: {instanceID: 15794}
+    - Class: 114
+      Script: {instanceID: 16018}
+    - Class: 114
+      Script: {instanceID: 16022}
+    - Class: 114
+      Script: {instanceID: 16148}
+    - Class: 114
+      Script: {instanceID: 16150}
+    - Class: 114
+      Script: {instanceID: 16184}
+    - Class: 114
+      Script: {instanceID: 16198}
+    - Class: 114
+      Script: {instanceID: 16234}
+    - Class: 114
+      Script: {instanceID: 16252}
+    - Class: 114
+      Script: {instanceID: 16284}
+    - Class: 114
+      Script: {instanceID: 16290}
+    - Class: 114
+      Script: {instanceID: 16312}
+    - Class: 114
+      Script: {instanceID: 16348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -413,6 +889,12 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 7bdf4d73336c82767cd8d602547e5ab8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAITimedDespawn
   - hash:
       serializedVersion: 2
       Hash: f7d320f082a58a9e48e3614a3681ffc8
@@ -469,6 +951,12 @@ ScriptsOnlyBuild:
     className: UIPanel
   - hash:
       serializedVersion: 2
+      Hash: 557b8d683142468c7c52e0163c1928a6
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: ProceduralGridMover
+  - hash:
+      serializedVersion: 2
       Hash: 85ce8bdf90b674a931520d60f2e898e8
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -499,7 +987,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 1436426556a8936c17296d3e1032b580
+      Hash: c56f9c914d0efce480553abd45650d46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProjectileBehaviour
@@ -565,6 +1053,12 @@ ScriptsOnlyBuild:
     className: UnityUITextFieldUI
   - hash:
       serializedVersion: 2
+      Hash: 645f3cc2a0f2624532f0b9f4ae56aa0f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: CombatTextAnimator
+  - hash:
+      serializedVersion: 2
       Hash: a3730e83409d983a35fe0a9e62d7d4cc
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -595,6 +1089,12 @@ ScriptsOnlyBuild:
     className: LevelManager
   - hash:
       serializedVersion: 2
+      Hash: ea7a90911a424012e6d723c4c3736cc0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: TameAI
+  - hash:
+      serializedVersion: 2
       Hash: c2e4e30ea89913f485840be418b5894f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
@@ -611,6 +1111,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: InputDeviceManager
+  - hash:
+      serializedVersion: 2
+      Hash: 482b4788a1650225af3664f1486faf28
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: ObjectPlacer
   - hash:
       serializedVersion: 2
       Hash: 9f45e4141cf9646eed5bdca0e773d8de
@@ -691,6 +1197,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: d376632841706998ae7c29cff62778be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAINeedsSystem
+  - hash:
+      serializedVersion: 2
       Hash: 20c4e279fe0cb6625faf29b13e614d66
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
@@ -731,6 +1243,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: DisappearEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneTransit
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -817,16 +1335,40 @@ ScriptsOnlyBuild:
     className: SmoothCameraWithBumper
   - hash:
       serializedVersion: 2
+      Hash: 556cc483b3f9d12aade7504632a9b58a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DamageAISystem
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: SwordAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: SummonedAIComponent
+  - hash:
+      serializedVersion: 2
       Hash: 65320784a930cb6d172fc68161aa179e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: UnityUIResponseButton
+  - hash:
+      serializedVersion: 2
+      Hash: aac6f99dc84c9a5a1171e2927e8f7014
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AIPath
   - hash:
       serializedVersion: 2
       Hash: c2e4e30ea89913f485840be418b5894f
@@ -887,6 +1429,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: UIButtonKeyTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: UpdatePlayerHealthOrbUI
   - hash:
       serializedVersion: 2
       Hash: e0dcc754547b0b137231726df4ca3470
@@ -979,6 +1527,18 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 8b462f3198685e7e2e75e3ab615a825f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: PlayerWeaponTest
+  - hash:
+      serializedVersion: 2
+      Hash: 8c3287b4a0445c2ffcc68ec41a7f6ddd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: EmeraldAICharacterController
+  - hash:
+      serializedVersion: 2
       Hash: 8309e9247757d80c68e165b0cf4bf837
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI.Wrappers
@@ -1039,6 +1599,12 @@ ScriptsOnlyBuild:
     className: ProximitySelector
   - hash:
       serializedVersion: 2
+      Hash: a5a60d0b9e6d53d72e12aef88e23ee68
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: FunnelModifier
+  - hash:
+      serializedVersion: 2
       Hash: 67b13d4101befe2d3c7fbe70d27b911a
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1055,6 +1621,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StopConversationIfTooFar
+  - hash:
+      serializedVersion: 2
+      Hash: 8cb2ef118eb38d078f5e3d49db19302f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: VisibilityCheckDelay
   - hash:
       serializedVersion: 2
       Hash: 85362640035cd4e9dfd34a81a3d71604
@@ -1103,6 +1675,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: UIPanel
+  - hash:
+      serializedVersion: 2
+      Hash: f08fcc1618ec9915d9530432bf8be751
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: SingleNodeBlocker
   - hash:
       serializedVersion: 2
       Hash: eec1e03da2ec27b7fa0c3fffbad73eb1
@@ -1249,6 +1827,12 @@ ScriptsOnlyBuild:
     className: OverrideDisplaySettings
   - hash:
       serializedVersion: 2
+      Hash: 1f612a5d9dccd63fa69ad2467aa29579
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIHealthBar
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1265,6 +1849,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
     className: SequencerCommandMoveTo
+  - hash:
+      serializedVersion: 2
+      Hash: d70cec16edc9e2fe8ab3637e70e69ecb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Soleil
   - hash:
       serializedVersion: 2
       Hash: f7cad2eb01fee0d698c86252d4e59efa
@@ -1315,6 +1905,12 @@ ScriptsOnlyBuild:
     className: SpawnedObject
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelUnlocker
+  - hash:
+      serializedVersion: 2
       Hash: 05725885eb12edf51dafe5cdb48dc095
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -1357,6 +1953,12 @@ ScriptsOnlyBuild:
     className: IncrementOnDestroy
   - hash:
       serializedVersion: 2
+      Hash: 49ce33c24f1d2c25221c9be69a86feef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pranoorde
+  - hash:
+      serializedVersion: 2
       Hash: 44d00ea8257dfe27048ec5a878b03023
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1393,6 +1995,18 @@ ScriptsOnlyBuild:
     className: StandardUIQuestTrackTemplate
   - hash:
       serializedVersion: 2
+      Hash: 8aada2c23cea6fc6a57e7bccba99a649
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: CombatTextSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 1d6bc7fb33fcc56237df7c329c31fac2
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AILerp
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1405,16 +2019,40 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 46cdbf48786f1faf06540c1959cd7b81
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: NodeLink
+  - hash:
+      serializedVersion: 2
       Hash: 914ea5e3d916973924d5a69581383b3b
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIResponseButton
   - hash:
       serializedVersion: 2
+      Hash: 8cb2ef118eb38d078f5e3d49db19302f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: VisibilityCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 6f3d24f07f3a4cc08ba6020073444e73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAIPlayerDamage
+  - hash:
+      serializedVersion: 2
       Hash: a0f4dfecff6d9d25be5b727a02e0c1a2
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI
     className: UnityTextFieldUI
+  - hash:
+      serializedVersion: 2
+      Hash: cae3db0c2a923f266d3c394971127bca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pixel_Perfect
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1439,6 +2077,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: DestructibleSaver
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyGFX
+  - hash:
+      serializedVersion: 2
+      Hash: dfcd2af319806951b046cc9ca3ba8034
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: HUDHealthBarTopDown
   - hash:
       serializedVersion: 2
       Hash: a3730e83409d983a35fe0a9e62d7d4cc
@@ -1475,6 +2125,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: UnityUIDialogueUI
+  - hash:
+      serializedVersion: 2
+      Hash: 7197e4aaeff121927ae0e8db550e67be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIProjectile
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1561,6 +2217,18 @@ ScriptsOnlyBuild:
     className: PersistentPositionData
   - hash:
       serializedVersion: 2
+      Hash: 822b82fc508ecf89f02553ba9d072906
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: PlayerWeapon
+  - hash:
+      serializedVersion: 2
+      Hash: 427e4ae6223362877cde7ac01baa97c3
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: NodeLink2
+  - hash:
+      serializedVersion: 2
       Hash: a06f17050ed1d5da1125b55d97d3b8c0
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1571,6 +2239,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: PreloadActorPortraits
+  - hash:
+      serializedVersion: 2
+      Hash: bcb1cb4a9395b5b5db8b7a2dd4db50da
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: 
+    className: AstarPath
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1711,6 +2385,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: CombatText
+  - hash:
+      serializedVersion: 2
       Hash: 8eeb8ba276cb3bfc8ade14dcd71b8be3
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -1721,6 +2401,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 7fb33bf5681fd9d4a816950cf7f7ea67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu_Open
   - hash:
       serializedVersion: 2
       Hash: 7cce08816b0ff204dfffa416d1751478
@@ -1745,6 +2431,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: AnimatedPortrait
+  - hash:
+      serializedVersion: 2
+      Hash: c20bea41753e9efec021728eb71ecadd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAIAbility
   - hash:
       serializedVersion: 2
       Hash: f78b33f14a19a185581e872a782a02d6
@@ -1831,6 +2523,18 @@ ScriptsOnlyBuild:
     className: LuaConsole
   - hash:
       serializedVersion: 2
+      Hash: 26df38ba51e7e90f65aded918cf9699f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAINonAIDamage
+  - hash:
+      serializedVersion: 2
+      Hash: e59b4ddbf539212f3d2f911f95cc1bb3
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: AstarSmoothFollow2
+  - hash:
+      serializedVersion: 2
       Hash: 204ea02909ea3f738dafe3ff633d2a93
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1841,6 +2545,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: SendMessageOnDialogueEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 0cceca996e1eb1401d74a841f34c4f83
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: SimpleSmoothModifier
   - hash:
       serializedVersion: 2
       Hash: 5b945a425e6ef6d9219f5c35b4e86533
@@ -1871,6 +2581,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.SequencerCommands
     className: SequencerCommandWaitForMessage
+  - hash:
+      serializedVersion: 2
+      Hash: 42aa20e830a61fce3ba3060c008bd9f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: NeedsSystemDisplay
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1951,10 +2667,22 @@ ScriptsOnlyBuild:
     className: SaveSystemTestMenu
   - hash:
       serializedVersion: 2
+      Hash: 3dd6601338dd3094d004366566ee86ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: EmeraldAISmoothFollow
+  - hash:
+      serializedVersion: 2
       Hash: 2b7333260047a3d7c23a28d9487db5ef
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: ProximitySelector
+  - hash:
+      serializedVersion: 2
+      Hash: 43acdecfcc62de1110964c47067c846f
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AlternativePath
   - hash:
       serializedVersion: 2
       Hash: c6ae19825a6ce399c625dba98bcb7305
@@ -1967,6 +2695,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyMob
+  - hash:
+      serializedVersion: 2
+      Hash: 3dd5460199f4f71ddeb16f492607b8fb
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AIDestinationSetter
   - hash:
       serializedVersion: 2
       Hash: 4e241a8d70f4e561151cf2f2cc8ba070
@@ -1985,6 +2719,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.Wrappers
     className: AlwaysFaceCamera
+  - hash:
+      serializedVersion: 2
+      Hash: ffcc51572e1b7c42c0e31a8cdabc31e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Heohumm
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -2023,7 +2763,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: e7cc9138844d6dfdb39ce4d7f84ed1be
+      Hash: 8e59124d1ab8f0377fada13a158b7e5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterBlaster
@@ -2047,6 +2787,12 @@ ScriptsOnlyBuild:
     className: EnabledSaver
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: UpdatePlayerHealthUI
+  - hash:
+      serializedVersion: 2
       Hash: 7baf9cb32c439d537983913ce0567968
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2057,6 +2803,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTargetGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 288407679d7c033c8e45d3e2be4c55ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelRestart
   - hash:
       serializedVersion: 2
       Hash: 290b65226485991f1bc607dff25f5708
@@ -2077,6 +2829,18 @@ ScriptsOnlyBuild:
     className: GUIButton
   - hash:
       serializedVersion: 2
+      Hash: 9c578d4e948804b9f712a0681bc6366f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: AISchedule
+  - hash:
+      serializedVersion: 2
+      Hash: e6f99143adaf09fa0f89226325c4202e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelUnlocks
+  - hash:
+      serializedVersion: 2
       Hash: a029db4ca8e62dfaacec27523770c235
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -2087,6 +2851,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SmoothCameraFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 5c78592db3c66db30175e44ebfc1ded9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIDamageOverTime
   - hash:
       serializedVersion: 2
       Hash: 8b14ed985619f82be1459511ddc458a6
@@ -2179,6 +2949,12 @@ ScriptsOnlyBuild:
     className: GUIScrollView
   - hash:
       serializedVersion: 2
+      Hash: 3f8a8ee551b37a20707c11abbf22fac7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Grirax
+  - hash:
+      serializedVersion: 2
       Hash: e21fb46ecde99315a2895ddeccf9fc9e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -2191,6 +2967,12 @@ ScriptsOnlyBuild:
     className: CinemachineImpulseListener
   - hash:
       serializedVersion: 2
+      Hash: 4469fcf62019a02c82c45d90633151c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: MoveToMousePosition
+  - hash:
+      serializedVersion: 2
       Hash: 5beaa09041ac0e419b4229f229b80c27
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -2201,6 +2983,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIQuestTitleButtonTemplate
+  - hash:
+      serializedVersion: 2
+      Hash: a04f9cd6eddbf9577cce84f81b385eb2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Noszinaa
   - hash:
       serializedVersion: 2
       Hash: 8309e9247757d80c68e165b0cf4bf837
@@ -2237,6 +3025,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: UnityUIQuestGroupTemplate
+  - hash:
+      serializedVersion: 2
+      Hash: e7af7273c8177a5779551d022b323d84
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: RaycastModifier
   - hash:
       serializedVersion: 2
       Hash: 4a639215e29265dd99e4fed19e3fa9f4
@@ -2291,6 +3085,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 424c99376ea3422d85441e7a4c2141fb
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: MineBotAnimation
   - hash:
       serializedVersion: 2
       Hash: 0441cc07a73ecdc671ae7e08ed1de470
@@ -2371,6 +3171,12 @@ ScriptsOnlyBuild:
     className: StringAsset
   - hash:
       serializedVersion: 2
+      Hash: c181fc48305e752f3e25e609d7495634
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AstarDebugger
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -2408,6 +3214,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: EmeraldAIHideMouse
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: BarkGroupManager
@@ -2423,6 +3235,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControlledTurret
+  - hash:
+      serializedVersion: 2
+      Hash: e09582a6539625128ebda95387ae5cc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: EmeraldAIMouseLook
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2461,6 +3279,12 @@ ScriptsOnlyBuild:
     className: UnityTextFieldUI
   - hash:
       serializedVersion: 2
+      Hash: 205d5a4abaaffcd7f366b1dac7d7d3f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: EmeraldAICharacterControllerTopDown
+  - hash:
+      serializedVersion: 2
       Hash: 193c4a869812f23c3a8e20c176ea912c
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2485,10 +3309,22 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 5b46b4b7aa1eeab4aad91658b3c6c671
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy_Chargers
+  - hash:
+      serializedVersion: 2
       Hash: 5afa78a18f9465dd946e41f983104731
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Demo.Wrappers
     className: DemoMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 2ed72a5636b929d32b0fe796c3c3e5a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Lioskohaa
   - hash:
       serializedVersion: 2
       Hash: aa8b350dfc1d2b55873bf85f2fb1a28e
@@ -2521,6 +3357,12 @@ ScriptsOnlyBuild:
     className: SetActiveOnDialogueEvent
   - hash:
       serializedVersion: 2
+      Hash: 66c061c17549c495f74c9dcc30aaaab2
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: MineBotAI
+  - hash:
+      serializedVersion: 2
       Hash: a029db4ca8e62dfaacec27523770c235
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2535,14 +3377,38 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIInitializer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crosshair
+  - hash:
+      serializedVersion: 2
+      Hash: 2791747c4adb8dc33debc52c24bec95a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIProjectileTimeout
+  - hash:
+      serializedVersion: 2
+      Hash: 2d6f9d7fb115fe0f7eba2e9c26f4a011
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: RaycastHitAI
   - hash:
       serializedVersion: 2
       Hash: 792308de3dbcda52147c6ae66c265731
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: ExtraDatabases
+  - hash:
+      serializedVersion: 2
+      Hash: b983f46c3ea8d6ec637178a9d2195008
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerDamageManager
   - hash:
       serializedVersion: 2
       Hash: 53b355740eafc7508477d55737049c94
@@ -2635,6 +3501,18 @@ ScriptsOnlyBuild:
     className: UpdateLocalizedUITexts
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestScript
+  - hash:
+      serializedVersion: 2
+      Hash: dcb285a54bd2a22067e32566c3167327
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: EmeraldAIPlayerHealth
+  - hash:
+      serializedVersion: 2
       Hash: 15bca0a43c5a6a86ac8257810515832b
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -2645,6 +3523,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: DefaultCameraAngle
+  - hash:
+      serializedVersion: 2
+      Hash: 8abe5c5970b933d28c84fe29c2232578
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: RelevantGraphSurface
   - hash:
       serializedVersion: 2
       Hash: 1634c7ed73a940dc3f52c97d5a4b0223
@@ -2659,6 +3543,30 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 95ec5ef41811e64837c657c402b6d78f
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: Seeker
+  - hash:
+      serializedVersion: 2
+      Hash: cbdd099350fe077cb17fee9dea4b37a1
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: TargetMover
+  - hash:
+      serializedVersion: 2
+      Hash: 6cd30e66b8b8737cd9e9c9402bc9f6e1
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: UnityReferenceHelper
+  - hash:
+      serializedVersion: 2
+      Hash: b478fca366fa93f5a93f584cd5ba32cc
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: DoorController
+  - hash:
+      serializedVersion: 2
       Hash: 8cd52fb228548e1a45f364ec3366ec67
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2671,10 +3579,22 @@ ScriptsOnlyBuild:
     className: SetEnabledOnDialogueEvent
   - hash:
       serializedVersion: 2
+      Hash: e2c52df92f5a11103c324ae820575e40
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: TurnBasedAI
+  - hash:
+      serializedVersion: 2
       Hash: fdcec5181e1974899c15040f9ef93198
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: UnityUIQuestTitle
+  - hash:
+      serializedVersion: 2
+      Hash: d8c14689cfb280e58e66e0484d10653f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: CameraShake
   - hash:
       serializedVersion: 2
       Hash: 69ff2289e705917048fd2557e73868a6
@@ -2713,6 +3633,12 @@ ScriptsOnlyBuild:
     className: StandardUIFoldoutTemplate
   - hash:
       serializedVersion: 2
+      Hash: ff653aebffb231eb559930e8cf311d62
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: GraphUpdateScene
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -2743,6 +3669,12 @@ ScriptsOnlyBuild:
     className: DialogueDatabase
   - hash:
       serializedVersion: 2
+      Hash: 15a2d6f251f83def56dd22d5326d4029
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAISystem
+  - hash:
+      serializedVersion: 2
       Hash: 29f71c9fca1722ba7aa860991819f995
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
@@ -2765,6 +3697,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: UnityUIQuestTitle
+  - hash:
+      serializedVersion: 2
+      Hash: 607ec805afd8d80d43f15ef06639440f
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: BlockManager
   - hash:
       serializedVersion: 2
       Hash: cb7bf75ce2ef00735ce08354e601cc08
@@ -2827,6 +3765,12 @@ ScriptsOnlyBuild:
     className: PlayerPrefsSavedGameDataStorer
   - hash:
       serializedVersion: 2
+      Hash: 427e4ae6223362877cde7ac01baa97c3
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: NodeLink3
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
@@ -2839,10 +3783,22 @@ ScriptsOnlyBuild:
     className: OverrideDialogueUI
   - hash:
       serializedVersion: 2
+      Hash: 02354ef208576d7ed4acdd4179e131f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: EmeraldAIDetection
+  - hash:
+      serializedVersion: 2
       Hash: 1d02c9741276a8094110a541fb009400
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: RangeTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: cf7c9b085103734ce38f5961dfb3bf59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: SpawnCompanion
   - hash:
       serializedVersion: 2
       Hash: c2e4e30ea89913f485840be418b5894f
@@ -2869,6 +3825,12 @@ ScriptsOnlyBuild:
     className: StandardDialogueUI
   - hash:
       serializedVersion: 2
+      Hash: 8cb2ef118eb38d078f5e3d49db19302f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAIBehaviors
+  - hash:
+      serializedVersion: 2
       Hash: d85966b35631917153f42c0ec8da9493
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -2879,6 +3841,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: StandardUIContainerTemplate
+  - hash:
+      serializedVersion: 2
+      Hash: 822b82fc508ecf89f02553ba9d072906
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.CharacterController
+    className: PlayerWeapon3rdPerson
   - hash:
       serializedVersion: 2
       Hash: 1cf8f8dc962c0f14e84efed1f758c267
@@ -2941,10 +3909,34 @@ ScriptsOnlyBuild:
     className: AudioEffect
   - hash:
       serializedVersion: 2
+      Hash: 00c410472495eea718f03e71257c4cd6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spectro
+  - hash:
+      serializedVersion: 2
       Hash: 7b12bcefe486063b37fc6ddc9419c4ac
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: SetAnimationOnDialogueEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 2fde15209800c4e94cf99bcad8981a24
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Examples
+    className: ProceduralWorld
+  - hash:
+      serializedVersion: 2
+      Hash: 1b455991f04482cc515a0c6e8dd10726
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wounsurs
+  - hash:
+      serializedVersion: 2
+      Hash: 707b41cf739030839ba747c6a0d2997d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAICombatTextData
   - hash:
       serializedVersion: 2
       Hash: 435ef814c95050b07fc4543d936c047d
@@ -2975,6 +3967,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: SequenceTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 2f52662ae98666322925a6f8c30393bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: PlayAIsEmote
   - hash:
       serializedVersion: 2
       Hash: 05725885eb12edf51dafe5cdb48dc095
@@ -3013,6 +4011,12 @@ ScriptsOnlyBuild:
     className: MessageEvents
   - hash:
       serializedVersion: 2
+      Hash: 0aab9b0491f3a88d6459f7add40022e4
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding.Legacy
+    className: LegacyAIPath
+  - hash:
+      serializedVersion: 2
       Hash: c33fb5d421b4d148c8670c725fb628bd
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.UnityGUI.Wrappers
@@ -3023,6 +4027,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CustomPointer
+  - hash:
+      serializedVersion: 2
+      Hash: 2d57f4d10d5ed795e4304ee5d6404144
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: DynamicGridObstacle
+  - hash:
+      serializedVersion: 2
+      Hash: b349b142d600a2478af04cea15b41a0b
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: AnimationLink
   - hash:
       serializedVersion: 2
       Hash: 1ea4e18e96c2164956de6704ef6960a7
@@ -3089,6 +4105,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem.Wrappers
     className: DialogueSystemController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Impact_Death
   - hash:
       serializedVersion: 2
       Hash: 74a44b07b7bc53fbe70148f2b7a26f7b
@@ -3161,6 +4183,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers
     className: KeepRectTransformOnscreen
+  - hash:
+      serializedVersion: 2
+      Hash: c0e31dd31c35455f422978da26bb908a
+    assemblyName: AstarPathfindingProject.dll
+    namespaceName: Pathfinding
+    className: Patrol
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -3355,6 +4383,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: c56f9c914d0efce480553abd45650d46
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy_Projectile
+  - hash:
+      serializedVersion: 2
       Hash: 94a6212bc97ed891bf46c9c21a0658cc
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -3365,6 +4399,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI
+    className: EmeraldAIEventsManager
+  - hash:
+      serializedVersion: 2
+      Hash: 5d5de05b28e1bd4afef2de34849905ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Vaeklaszo
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -3415,6 +4461,12 @@ ScriptsOnlyBuild:
     className: GUITextField
   - hash:
       serializedVersion: 2
+      Hash: c82cba636f0aaf772bbc09b3cd811558
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OnTriggerEvent
+  - hash:
+      serializedVersion: 2
       Hash: aa8b350dfc1d2b55873bf85f2fb1a28e
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
@@ -3443,6 +4495,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: PixelCrushers.DialogueSystem
     className: DialogueSystemEvents
+  - hash:
+      serializedVersion: 2
+      Hash: dfcd2af319806951b046cc9ca3ba8034
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Example
+    className: HUDHealthBar
+  - hash:
+      serializedVersion: 2
+      Hash: 264b4b562271f7033c266aabed8da6d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EmeraldAI.Utility
+    className: AnimationProfile
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -3475,55 +4539,27 @@ ScriptsOnlyBuild:
     className: MainMenuAnimation
   - hash:
       serializedVersion: 2
-      Hash: 7fb33bf5681fd9d4a816950cf7f7ea67
+      Hash: d34752c5d244c34e7664e6599ddac85e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Menu_Open
+    className: Asteroid
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6c01fdc4e4e3d6363aa42437c2f07887
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SceneTransit
+    className: AsteroidSpawn
   - hash:
       serializedVersion: 2
-      Hash: b90e229db31da68b2bbb80cd5960ac95
+      Hash: a5dd848c7284703578d5d9d2685dfc1c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LevelUnlocks
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TestScript
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelUnlocker
-  - hash:
-      serializedVersion: 2
-      Hash: acc17a8743cd1b47a363c508c287c73c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerDamageManager
-  - hash:
-      serializedVersion: 2
-      Hash: 3a34cdb0b759a6c1ac8d92170ceb0acb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelRestart
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootingHealth
+    className: Spawn_Crashers
   platform: 5
   scenePathNames:
   - Assets/Scenes/1. Main Menu.unity
   - Assets/Scenes/2.1. Mars.unity
+  - Assets/Scenes/2.2. Mars.unity
+  - Assets/Scenes/2.B. Mars.unity
   playerPath: D:/GitHub Repositories/Dissertation_Game_2D/Game_Files/Dissertation_Game/Build/New
     folder/Dissertation_Game.exe

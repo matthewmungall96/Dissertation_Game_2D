@@ -12,6 +12,8 @@ public class ShipMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (GamePaused == false && PlayerHealth.playerHealthNo > 0)
         {
             if (Input.GetKeyDown(KeyCode.S))
@@ -22,6 +24,7 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.S))
             {
                 gameObject.transform.Translate(Vector3.right * 0.05f);
+                thrustersOn = false;
             }
 
             if (Input.GetKeyDown(KeyCode.W))
@@ -32,6 +35,7 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 gameObject.transform.Translate(Vector3.left * 0.05f);
+                thrustersOn = false;
             }
 
             if (Input.GetKeyDown(KeyCode.A))
@@ -42,6 +46,7 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 gameObject.transform.Translate(Vector3.down * 0.05f);
+                thrustersOn = false;
             }
 
             if (Input.GetKeyDown(KeyCode.D))
@@ -52,22 +57,13 @@ public class ShipMovementScript : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 gameObject.transform.Translate(Vector3.up * 0.05f);
+                thrustersOn = false;
             }
 
-            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.LeftShift))
             {
                 gameObject.transform.Translate(Vector3.up * 0.075f);
                 thrustersOn = true;
-                if (thrustersOn == true)
-                {
-                    thruster1.SetActive(true);
-                    thruster2.SetActive(true);
-                }
-
-                else
-                {
-                    thrustersOn = false;
-                }
             }
 
             if (Input.GetKeyDown(KeyCode.P))
@@ -80,8 +76,15 @@ public class ShipMovementScript : MonoBehaviour
         {
             return;
         }
+    }
 
-
+    public void thrusters()
+    {
+        if (thrustersOn == true)
+        {
+            thruster1.SetActive(true);
+            thruster2.SetActive(true);
+        }
 
         else
         {
