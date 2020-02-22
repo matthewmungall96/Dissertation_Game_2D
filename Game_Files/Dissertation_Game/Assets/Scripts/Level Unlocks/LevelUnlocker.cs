@@ -28,17 +28,4 @@ public class LevelUnlocker : MonoBehaviour
     {
         LevelManager.Jupiter_Boss_Completed = true;
     }
-    public void Venus_Level_1()
-    {
-        LevelManager.Venus_Level_1 = true;
-    }
-
-    public void Venus_Level_2()
-    {
-        LevelManager.Venus_Level_2 = true;
-    }
-    public void Venus_Level_Boss()
-    {
-        LevelManager.Venus_Boss_Completed = true;
-    }
 }

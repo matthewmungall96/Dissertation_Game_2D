@@ -106,6 +106,7 @@ public class Noszinaa : MonoBehaviour
 
     private void KillSelf()
     {
+            PlayerScore.playerpoints = PlayerScore.playerpoints + 30;
             death = true;
             winScreen.SetActive(true);
             NoszinaaAnim.SetBool("Die", true);

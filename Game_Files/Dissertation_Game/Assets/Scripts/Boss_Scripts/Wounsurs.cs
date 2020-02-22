@@ -106,6 +106,7 @@ public class Wounsurs : MonoBehaviour
 
     private void KillSelf()
     {
+        PlayerScore.playerpoints = PlayerScore.playerpoints + 50;
         death = true;
         winScreen.SetActive(true);
         WounsursAnim.SetBool("Die", true);

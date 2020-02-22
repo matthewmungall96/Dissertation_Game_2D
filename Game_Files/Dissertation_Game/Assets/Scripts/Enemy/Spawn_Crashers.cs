@@ -51,6 +51,7 @@ public class Spawn_Crashers : MonoBehaviour
             sr.material = MatWhite;
             if (health < 0)
             {
+                PlayerScore.playerpoints = PlayerScore.playerpoints + 15;
                 Debug.Log("Shot Down");
                 OnDeath();
             }

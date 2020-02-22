@@ -67,35 +67,6 @@ public class LevelRestart : MonoBehaviour
         SceneManager.LoadScene("3.B. Jupiter");
     }
 
-    public void RestartVenus1()
-    {
-        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
-        ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
-        Boss_Health.PranoordeHealth = Boss_Health.PranoordeMaxHealth;
-        PlayerHealth.playerHasDied = false;
-        GameOverMenu.SetActive(false);
-        SceneManager.LoadScene("4.1. Venus");
-    }
-
-    public void RestartVenus2()
-    {
-        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
-        ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
-        Boss_Health.VaeklaszoHealth = Boss_Health.VaeklaszoMaxHealth;
-        PlayerHealth.playerHasDied = false;
-        GameOverMenu.SetActive(false);
-        SceneManager.LoadScene("4.2. Venus");
-    }
-    public void RestartVenusBoss()
-    {
-        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
-        ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
-        Boss_Health.GriraxHealth = Boss_Health.GriraxMaxHealth;
-        PlayerHealth.playerHasDied = false;
-        GameOverMenu.SetActive(false);
-        SceneManager.LoadScene("4.B. Venus");
-    }
-
     public void MainMenu()
     {
         SceneManager.LoadScene("1. Main Menu");

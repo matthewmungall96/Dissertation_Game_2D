@@ -106,6 +106,7 @@ public class Soleil : MonoBehaviour
 
     private void KillSelf()
     {
+        PlayerScore.playerpoints = PlayerScore.playerpoints + 50;
         death = true;
         winScreen.SetActive(true);
         SoleilAnim.SetBool("Die", true);

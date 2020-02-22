@@ -7,7 +7,7 @@ public class Enemy_Chargers : MonoBehaviour
     public float speed;
     public float stoppingDistance;
     private Transform Target;
-    private int health =  5;
+    private int health =  15;
     public Material MatWhite;
     private Material MatDefault;
     SpriteRenderer sr;
@@ -48,6 +48,7 @@ public class Enemy_Chargers : MonoBehaviour
             sr.material = MatWhite;
             if (health < 0)
             {
+                PlayerScore.playerpoints = PlayerScore.playerpoints + 5;
                 Debug.Log("Shot Down");
                 OnDeath();
             }

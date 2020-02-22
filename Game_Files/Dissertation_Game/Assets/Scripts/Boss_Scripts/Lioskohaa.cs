@@ -106,6 +106,7 @@ public class Lioskohaa : MonoBehaviour
 
     private void KillSelf()
     {
+        PlayerScore.playerpoints = PlayerScore.playerpoints + 50;
         death = true;
         winScreen.SetActive(true);
         LioskohaaAnim.SetBool("Die", true);

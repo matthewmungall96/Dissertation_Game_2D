@@ -6,13 +6,10 @@ public class SmoothCameraFollow : MonoBehaviour
 {
     [SerializeField]
     GameObject player;
-
     [SerializeField]
     float timeOffset;
-
     [SerializeField]
     Vector2 posOffset;
-
     [SerializeField]
     float leftLimit;
     [SerializeField]

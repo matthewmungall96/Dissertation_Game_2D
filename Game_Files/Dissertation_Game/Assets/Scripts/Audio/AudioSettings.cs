@@ -7,6 +7,12 @@ public class AudioSettings : MonoBehaviour
 {
     public AudioMixer audioMixer;
 
+    public void SetMasterVolume(float masterVolume)
+    {
+        audioMixer.SetFloat("masterVolume", masterVolume);
+        AudioVariables.musicVolume = masterVolume;
+    }
+
     public void SetMusicVolume(float musicVolume)
     {
         audioMixer.SetFloat("musicVolume", musicVolume);

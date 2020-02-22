@@ -106,6 +106,7 @@ public class Heohumm : MonoBehaviour
 
     private void KillSelf()
     {
+        PlayerScore.playerpoints = PlayerScore.playerpoints + 50;
         death = true;
         winScreen.SetActive(true);
         HeohummAnim.SetBool("Die", true);
