@@ -26,52 +26,32 @@ public class CharacterBlaster : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (isDead == false && PlayerDamageManager.weaponsDisabled == false)
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (GamePaused == true)
             {
-                if (GamePaused == true)
-                {
-                    return;
-                }
-
-                else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy >= 30)
-                {
-                    ShootMissile();
-                }
-
+                return;
             }
 
-            if (Input.GetMouseButton(1))
+            else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy >= 30)
             {
-                if (GamePaused == true)
-                {
-                    return;
-                }
-
-                else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy >= 10)
-                {
-                    ShootLaser();
-                }
-            }
-
-            else
-            {
-                if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy)
-                {
-                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.1f;
-                    UpdatePlayerEnergy();
-                }
-
-                else
-                {
-                    UpdatePlayerEnergy();
-                    return;
-                }
+                ShootMissile();
             }
 
         }
 
+        if (Input.GetMouseButton(1))
+        {
+            if (GamePaused == true)
+            {
+                return;
+            }
+
+            else if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && ShootingHealth.ShipEnergy >= 10)
+            {
+                ShootLaser();
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -82,6 +62,22 @@ public class CharacterBlaster : MonoBehaviour
         {
             return;
         }
+        else 
+        {
+            if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy)
+            {
+                ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 1f;
+                UpdatePlayerEnergy();
+            }
+
+            else
+            {
+                UpdatePlayerEnergy();
+                return;
+            }
+        }
+
+        Debug.Log("Total Energy" + ShootingHealth.ShipEnergy);
     }
 
     public void ShootMissile()

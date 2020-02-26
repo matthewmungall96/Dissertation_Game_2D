@@ -9,55 +9,9 @@ public class PlayerDamageManager : MonoBehaviour
     public GameObject PlayerDeathScreen;
     public Animator shipExplosion;
     private int timesDied = 0;
-    public static bool isDisabled;
-    public bool isDisabledLioskohaa;
-    public bool isDisabledWounsurs;
-    public bool isDisabledHeohumm;
-    public bool isDisabledSpectro;
-    public static bool weaponsDisabled;
-    public float weaponsDisabledTime;
-    public float disabledTime;
     void Update()
     {
         UpdatePlayerHealth();
-
-        if (isDisabled == true && isDisabledLioskohaa == true)
-        {
-            disabledTime += Time.deltaTime;
-            if (disabledTime >= 10)
-            {
-                isDisabled = false;
-            }
-        }
-
-        if (isDisabled == true && isDisabledWounsurs == true)
-        {
-            disabledTime += Time.deltaTime;
-            if (disabledTime >= 15)
-            {
-                isDisabled = false;
-            }
-        }
-
-        if (weaponsDisabled == true && isDisabledSpectro == true)
-        {
-            weaponsDisabledTime += Time.deltaTime;
-            if (weaponsDisabledTime >= 10)
-            {
-                weaponsDisabled = false;
-            }
-        }
-
-        if (isDisabled == true && isDisabledHeohumm == true)
-        {
-            disabledTime += Time.deltaTime;
-            weaponsDisabledTime += Time.deltaTime;
-            if (disabledTime >= 20 && weaponsDisabledTime >= 20)
-            {
-                isDisabled = false;
-                weaponsDisabled = false;
-            }
-        }
 
         if (PlayerHealth.playerHealthNo <= 0 && PlayerHealth.playerHasDied == false)
         {
@@ -88,6 +42,11 @@ public class PlayerDamageManager : MonoBehaviour
 
     }
 
+    public void WrongAnswer()
+    {
+        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo / 100 * 50;
+    }
+
     public void PlayerDeath()
     {
         PlayerHealth.playerHasDied = true;
@@ -101,41 +60,4 @@ public class PlayerDamageManager : MonoBehaviour
         yield return new WaitForSeconds(0);
         Destroy(gameObject);
     }
-
-    public void WrongAnswerNoszinaa()
-    {
-        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo / 100 * 50;
-    }
-
-    public void WrongAnswerLioskohaa()
-    {
-        isDisabledLioskohaa = true;
-        isDisabled = true;
-    }
-
-    public void WrongAnswerSpectro()
-    {
-        isDisabledSpectro = true;
-        weaponsDisabled = true;
-    }
-
-    public void WrongAnswerWounsurs()
-    {
-        isDisabled = true;
-        isDisabledWounsurs = true;
-    }
-
-    public void WrongAnswerSoleil()
-    {
-        PlayerHealth.playerHealthNo = PlayerHealth.playerHealthNo = 0;
-    }
-
-    public void WrongAnswerHeohumm()
-    {
-        isDisabledHeohumm = true;
-        weaponsDisabled = true;
-        isDisabled = true;
-    }
-
-
 }

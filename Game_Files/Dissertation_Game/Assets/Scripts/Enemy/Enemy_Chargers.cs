@@ -46,7 +46,7 @@ public class Enemy_Chargers : MonoBehaviour
             Destroy(collision.gameObject);
             health = health - 3;
             sr.material = MatWhite;
-            if (health <= 0)
+            if (health < 0)
             {
                 PlayerScore.playerpoints = PlayerScore.playerpoints + 5;
                 Debug.Log("Shot Down");

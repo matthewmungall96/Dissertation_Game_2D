@@ -23,8 +23,6 @@ public class Spectro: MonoBehaviour
     public float nextFire;
     public float randomFire = 1f;
     public float fireRate = 3f;
-    public bool rightAnswer;
-    public float rightAnswerDisabled;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -44,20 +42,20 @@ public class Spectro: MonoBehaviour
 
         }
 
-        if ((totalTime > 3) && (GetComponent<Transform>().position.y > 3) && death == false && rightAnswer == false)
+        if ((totalTime > 3) && (GetComponent<Transform>().position.y > 3) && death == false)
         {
             fire();
             SpectroAnim.SetBool("Move_Down", true);
             SpectroAnim.SetBool("Move_Up", false);
         }
 
-        if ((totalTime > 3) && (GetComponent<Transform>().position.y < -3) && death == false && rightAnswer == false)
+        if ((totalTime > 3) && (GetComponent<Transform>().position.y < -3) && death == false)
         {
             SpectroAnim.SetBool("Move_Up", true);
             SpectroAnim.SetBool("Move_Down", false);
         }
 
-        if (shotTime > Random.RandomRange(3, 6) && death == false && rightAnswer == true)
+        if (shotTime > Random.RandomRange(3, 6) && death == false)
         {
             fire();
         }
@@ -71,15 +69,6 @@ public class Spectro: MonoBehaviour
         else
         {
             Invoke("ResetMaterial", 0.1f);
-        }
-
-        if (rightAnswer == true)
-        {
-            rightAnswerDisabled = Time.deltaTime;
-            if (rightAnswerDisabled == 10)
-            {
-                rightAnswer = false;
-            }
         }
     }
 
@@ -102,7 +91,7 @@ public class Spectro: MonoBehaviour
 
     public void RightAnswer()
     {
-        rightAnswer = true;
+        Boss_Health.SpectroHealth = Boss_Health.SpectroHealth / 100 * 50;
     }
     void ResetMaterial()
     {

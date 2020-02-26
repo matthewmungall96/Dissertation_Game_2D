@@ -8,8 +8,6 @@ TagManager:
   - Missile
   - Enemy
   - Obstacle
-  - Bullet
-  - Laser
   layers:
   - Default
   - TransparentFX
