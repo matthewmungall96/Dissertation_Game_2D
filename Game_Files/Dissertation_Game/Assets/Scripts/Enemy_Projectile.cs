@@ -6,7 +6,7 @@ public class Enemy_Projectile : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
-    public int damage = 40;
+    public int damage = 10;
     public float lifetime;
     public GameObject impactEffect;
 
@@ -29,7 +29,6 @@ public class Enemy_Projectile : MonoBehaviour
             Instantiate(impactEffect, transform.position, transform.rotation);
             StartCoroutine(DeathWait());
         }
-
     }
 
     IEnumerator DeathWait()

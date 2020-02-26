@@ -23,6 +23,8 @@ public class Heohumm : MonoBehaviour
     public float nextFire;
     public float randomFire = 1f;
     public float fireRate = 3f;
+    public bool stopFiring = false;
+    public float reloadTime = 0;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -36,6 +38,16 @@ public class Heohumm : MonoBehaviour
     {
         totalTime += Time.deltaTime;
         shotTime += Time.deltaTime;
+        reloadTime = Time.deltaTime;
+
+        if (stopFiring == true)
+        {
+            if (reloadTime == 2.0f)
+            {
+                stopFiring = false;
+                reloadTime = 0f;
+            }
+        }
 
         if (totalTime > 2.5 && totalTime < 3)
         {
@@ -55,7 +67,7 @@ public class Heohumm : MonoBehaviour
             HeohummAnim.SetBool("Move_Down", false);
         }
 
-        if (shotTime > Random.RandomRange(3, 6) && death == false)
+        if (death == false && shotTime == 2)
         {
             fire();
         }
@@ -91,7 +103,7 @@ public class Heohumm : MonoBehaviour
 
     public void RightAnswer()
     {
-        Boss_Health.HeohummHealth = Boss_Health.HeohummHealth / 100 * 50;
+        Boss_Health.HeohummHealth = Boss_Health.HeohummHealth - 100;
     }
     void ResetMaterial()
     {
@@ -100,8 +112,13 @@ public class Heohumm : MonoBehaviour
 
     public void fire()
     {
-        Instantiate(missilePrefab, blaster.position, blaster.rotation);
-        shotTime = 0f;
+            Instantiate(missilePrefab, blaster.position, blaster.rotation);
+            shotTime = 0f;
+    }
+
+    public void Reload()
+    {
+
     }
 
     private void KillSelf()

@@ -147,6 +147,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &17129661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4539946445569307154, guid: 90ca1111881447148a953db99c81213c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4539946445552341679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &25136175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1892,7 @@ GameObject:
   - component: {fileID: 768485689}
   - component: {fileID: 768485688}
   m_Layer: 5
-  m_Name: Spectro_Health_Bar
+  m_Name: Heohumm_Health_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6994,9 +7000,15 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!4 &893215469 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
+  m_CorrespondingSourceObject: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
     type: 3}
-  m_PrefabInstance: {fileID: 1057702664249626438}
+  m_PrefabInstance: {fileID: 4539946445552341679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &893215471 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4539946445902229568, guid: 90ca1111881447148a953db99c81213c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4539946445552341679}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &896095447
 GameObject:
@@ -7587,16 +7599,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
-    state: 0
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: 0
-      lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 1948348657}
     state: 0
   - condition:
       luaConditions: []
@@ -7689,7 +7692,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Spectro Confrontation
+  conversation: Heohumm Confrontation
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -7709,16 +7712,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
-    state: 1
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: 0
-      lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 1948348657}
     state: 1
   - condition:
       luaConditions: []
@@ -13734,7 +13728,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Spectro
+  m_Text: Heohumm
 --- !u!222 &1450078026
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14105,7 +14099,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: f0630834cdbcfa44e9df53403e44cd58, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e72b5607b24dd3247a7168ad745086fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14130,6 +14124,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 2.88, y: -1.9990001, z: 89.731}
+--- !u!224 &1948348657 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5649640241824125771, guid: 00b14f7d5d227f44a95c1d1265871b82,
+    type: 3}
+  m_PrefabInstance: {fileID: 34427007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2067264107
 GameObject:
   m_ObjectHideFlags: 0
@@ -14606,90 +14606,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eff2e3fdb23f0d4592ddfb632d0fbcb, type: 3}
---- !u!1001 &1057702664249626438
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1057702664468966826, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_Name
-      value: Spectro
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 23.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.005505854
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.030084033
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7054281
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7081214
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.9990001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966827, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.731
-      objectReference: {fileID: 0}
-    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: SpectroFightUi
-      value: 
-      objectReference: {fileID: 768485687}
-    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: SpectroHealthBar
-      value: 
-      objectReference: {fileID: 214789086}
-    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
-        type: 3}
-      propertyPath: winScreen
-      value: 
-      objectReference: {fileID: 642090469}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c6dab1fa3f0001438cdfc13c670e41c, type: 3}
 --- !u!1001 &2466185665234260458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15677,6 +15593,131 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c7da475c87a46340b43466dcab56630, type: 3}
+--- !u!1001 &4539946445552341679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: HeohummFightUi
+      value: 
+      objectReference: {fileID: 768485687}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: HeohummAnim
+      value: 
+      objectReference: {fileID: 893215471}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: MatWhite
+      value: 
+      objectReference: {fileID: 2100000, guid: 434f5c50779e3ea45a7ae2a53d5beec7, type: 2}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: blaster
+      value: 
+      objectReference: {fileID: 17129661}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 642090469}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: missilePrefab
+      value: 
+      objectReference: {fileID: 2197974161149184830, guid: 2a5de06cb04dd5e49a00680b9f14a053,
+        type: 3}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: HeohummHealthBar
+      value: 
+      objectReference: {fileID: 214789086}
+    - target: {fileID: 4539946445569307154, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445569307154, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445569307154, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.005505854
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.030084033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7054281
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7081214
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 2.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.9990001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229570, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.731
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229571, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_Name
+      value: Heohumm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539946445902229571, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90ca1111881447148a953db99c81213c, type: 3}
 --- !u!1 &6643744047453482410 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7783916905790414217, guid: 3c506a5d2b888c7428b0cdf22003351f,
