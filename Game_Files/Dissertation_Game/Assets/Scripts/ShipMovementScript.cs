@@ -12,9 +12,7 @@ public class ShipMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-        if (GamePaused == false && PlayerHealth.playerHealthNo > 0)
+        if (GamePaused == false && PlayerHealth.playerHealthNo > 0 && PlayerDamageManager.isDisabled == false)
         {
             if (Input.GetKeyDown(KeyCode.S))
             {

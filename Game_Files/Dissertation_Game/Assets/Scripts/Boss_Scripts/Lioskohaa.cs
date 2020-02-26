@@ -91,7 +91,7 @@ public class Lioskohaa : MonoBehaviour
 
     public void RightAnswer()
     {
-        Boss_Health.LioskohaaHealth = Boss_Health.LioskohaaHealth / 100 * 50;
+        Boss_Health.LioskohaaHealth = Boss_Health.LioskohaaHealth = 0;
     }
     void ResetMaterial()
     {
@@ -104,7 +104,7 @@ public class Lioskohaa : MonoBehaviour
         shotTime = 0f;
     }
 
-    private void KillSelf()
+    public void KillSelf()
     {
         PlayerScore.playerpoints = PlayerScore.playerpoints + 50;
         death = true;

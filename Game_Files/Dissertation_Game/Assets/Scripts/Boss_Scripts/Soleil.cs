@@ -23,6 +23,8 @@ public class Soleil : MonoBehaviour
     public float nextFire;
     public float randomFire = 1f;
     public float fireRate = 3f;
+    public static bool rightAnswer;
+    public float rightAnswerDisable;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -60,6 +62,15 @@ public class Soleil : MonoBehaviour
             fire();
         }
 
+        if (rightAnswer == true)
+        {
+            rightAnswerDisable += Time.deltaTime;
+            if (rightAnswerDisable >= 10)
+            {
+                rightAnswer = false;
+            }
+        }
+
         updateHealth();
         if (Boss_Health.SoleilHealth <= 0 && death == false)
         {
@@ -91,7 +102,7 @@ public class Soleil : MonoBehaviour
 
     public void RightAnswer()
     {
-        Boss_Health.SoleilHealth = Boss_Health.SoleilHealth / 100 * 50;
+        rightAnswer = true;
     }
     void ResetMaterial()
     {
@@ -100,8 +111,11 @@ public class Soleil : MonoBehaviour
 
     public void fire()
     {
-        Instantiate(missilePrefab, blaster.position, blaster.rotation);
-        shotTime = 0f;
+        if (rightAnswer == false)
+        {
+            Instantiate(missilePrefab, blaster.position, blaster.rotation);
+            shotTime = 0f;
+        }
     }
 
     private void KillSelf()
