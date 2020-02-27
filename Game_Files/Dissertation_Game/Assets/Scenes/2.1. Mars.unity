@@ -4092,6 +4092,11 @@ PrefabInstance:
       propertyPath: missileAudio
       value: 
       objectReference: {fileID: 1333477471}
+    - target: {fileID: 426383305101362121, guid: 523423131bef59d4cac199e27be94786,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
     - target: {fileID: 426383305101362122, guid: 523423131bef59d4cac199e27be94786,
         type: 3}
       propertyPath: m_BodyType
