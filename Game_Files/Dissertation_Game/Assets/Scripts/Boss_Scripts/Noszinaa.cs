@@ -87,6 +87,14 @@ public class Noszinaa : MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.NoszinaaHealth = Boss_Health.NoszinaaHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()

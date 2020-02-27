@@ -55,11 +55,9 @@ public class CharacterBlaster : MonoBehaviour
                 }
             }
 
-            else
-            {
-                if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy)
+                if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy && GamePaused == false)
                 {
-                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.1f;
+                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.35f;
                     UpdatePlayerEnergy();
                 }
 
@@ -68,8 +66,6 @@ public class CharacterBlaster : MonoBehaviour
                     UpdatePlayerEnergy();
                     return;
                 }
-            }
-
         }
 
 

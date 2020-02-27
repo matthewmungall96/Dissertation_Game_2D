@@ -69,6 +69,12 @@ public class LevelRestart : MonoBehaviour
 
     public void MainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("1. Main Menu");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("4. Credits");
     }
 }

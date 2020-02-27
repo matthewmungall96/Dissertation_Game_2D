@@ -98,6 +98,14 @@ public class Soleil : MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.SoleilHealth = Boss_Health.SoleilHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()

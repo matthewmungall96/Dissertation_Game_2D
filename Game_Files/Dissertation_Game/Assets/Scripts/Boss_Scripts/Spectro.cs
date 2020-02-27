@@ -98,6 +98,14 @@ public class Spectro: MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.SpectroHealth = Boss_Health.SpectroHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()

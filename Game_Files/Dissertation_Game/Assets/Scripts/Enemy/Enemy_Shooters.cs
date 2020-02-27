@@ -80,6 +80,23 @@ public class Enemy_Shooters : MonoBehaviour
                 Invoke("ResetMaterial", 0.1f);
             }
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            health = health - 1;
+            sr.material = MatWhite;
+            if (health < 0)
+            {
+                Debug.Log("Shot Down");
+                OnDeath();
+            }
+
+            else
+            {
+                Invoke("ResetMaterial", 0.1f);
+            }
+        }
     }
 
     public void fire()

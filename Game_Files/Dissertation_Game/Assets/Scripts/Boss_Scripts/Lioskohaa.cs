@@ -87,6 +87,14 @@ public class Lioskohaa : MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.LioskohaaHealth = Boss_Health.LioskohaaHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()

@@ -15,6 +15,7 @@ public class Spawn_Crashers : MonoBehaviour
     public Material MatWhite;
     private Material MatDefault;
     SpriteRenderer sr;
+    public bool destroy;
 
     private void Start()
     {
@@ -22,6 +23,14 @@ public class Spawn_Crashers : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         MatDefault = sr.material;
         Instantiate(Suicider, transform.position, transform.rotation);
+    }
+
+    private void Update()
+    {
+        if (destroy == true)
+        {
+            Destroy();
+        }
     }
 
     public void SpawnObject()
@@ -51,7 +60,23 @@ public class Spawn_Crashers : MonoBehaviour
             sr.material = MatWhite;
             if (health < 0)
             {
-                PlayerScore.playerpoints = PlayerScore.playerpoints + 15;
+                Debug.Log("Shot Down");
+                OnDeath();
+            }
+
+            else
+            {
+                Invoke("ResetMaterial", 0.1f);
+            }
+        }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            health = health - 1;
+            sr.material = MatWhite;
+            if (health < 0)
+            {
                 Debug.Log("Shot Down");
                 OnDeath();
             }
@@ -72,12 +97,11 @@ public class Spawn_Crashers : MonoBehaviour
     {
         Invoke("ResetMaterial", 0.1f);
         spawner.SetBool("Dead", true);
-        StartCoroutine(DeathWait());
     }
 
-    IEnumerator DeathWait()
+    public void Destroy()
     {
-        yield return new WaitForSeconds(2);
+        PlayerScore.playerpoints = PlayerScore.playerpoints + 15;
         Destroy(gameObject);
     }
 }

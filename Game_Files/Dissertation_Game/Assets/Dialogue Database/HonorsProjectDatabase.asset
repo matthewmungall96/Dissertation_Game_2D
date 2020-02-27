@@ -443,6 +443,42 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 3
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: 
+    - title: Entry 1
+      value: Surive the asteroid field ambush
+      type: 0
+      typeString: 
+    - title: Entry 2 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 2
+      value: Complete the Multiple Choice
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 3
+      value: Defeat Wounsurs
+      type: 0
+      typeString: 
   - id: 5
     fields:
     - title: Name
@@ -473,6 +509,42 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 3
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: 
+    - title: Entry 1
+      value: Defeat the enemies
+      type: 0
+      typeString: 
+    - title: Entry 2 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 2
+      value: Complete the multiple choice
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 3
+      value: 'Defeat Soleli '
+      type: 0
+      typeString: 
   - id: 6
     fields:
     - title: Name
@@ -503,6 +575,46 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Abandonable
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 3
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: 
+    - title: Entry 1
+      value: Find Heohumm
+      type: 0
+      typeString: 
+    - title: Entry 2 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 2
+      value: Complete the multiple choice
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 3
+      value: Defeat Heohumm and finish the game
+      type: 0
+      typeString: 
   locations:
   - id: 2
     fields:
@@ -1382,7 +1494,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Mars Level 1", 2, "success");
+
+        SetQuestEntryState("Mars
+        Level 1", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1530,7 +1645,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Mars Level 1", 2, "success");
+
+        SetQuestEntryState("Mars
+        Level 1", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2310,7 +2428,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Mars Level 2", 2, "success");
+
+        SetQuestEntryState("Mars
+        Level 2", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -4249,7 +4370,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: (Continue Quiz)
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4296,7 +4417,7 @@ MonoBehaviour:
     - id: 24
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Pictures
@@ -4320,7 +4441,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: 'Question: What function is used for finding out about objects, properties
+          and method?'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4958,7 +5080,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 32
+        destinationConversationID: 5
+        destinationDialogueID: 37
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Mars_Final_Boss_Questions"] = 2
       userScript: 
       onExecute:
@@ -5068,7 +5196,7 @@ MonoBehaviour:
     - id: 34
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Pictures
@@ -5092,7 +5220,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: (Begin Boss Fight)
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5120,14 +5248,17 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Mars Final Boss", 2, "success");
+
+        SetQuestEntryState("Mars
+        Final Boss", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 300
-        y: 1070
+        y: 1068.4127
         width: 160
         height: 30
     - id: 35
@@ -5206,7 +5337,7 @@ MonoBehaviour:
     - id: 36
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Pictures
@@ -5230,7 +5361,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: (Begin Boss Fight)
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5258,7 +5389,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Mars Final Boss", 2, "success");
+
+        SetQuestEntryState("Mars
+        Final Boss", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -5280,8 +5414,76 @@ MonoBehaviour:
         y: 1080.7843
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.51000047
+    - id: 37
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: (Begin Boss Fight)
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'SetQuestEntryState("Mars Final Boss", 2, "success");
+
+        SetQuestEntryState("Mars
+        Final Boss", 3, "active")'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 60
+        y: 1070
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 313.28284}
+    canvasZoom: 0.63000035
   - id: 6
     fields:
     - title: Title
@@ -6123,7 +6325,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Jupiter Level 1", 2, "success");
+
+        SetQuestEntryState("Jupiter
+        Level 1", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -6200,7 +6405,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Jupiter Level 1", 2, "success");
+
+        SetQuestEntryState("Jupiter
+        Level 1", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -7065,7 +7273,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Jupiter Level 2", 2, "success");
+
+        SetQuestEntryState("Jupiter
+        Level 2", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -9752,14 +9963,17 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Jupiter Final Boss", 2, "success");
+
+        SetQuestEntryState("Jupiter
+        Final Boss", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 480
-        y: 1020
+        y: 1021.3751
         width: 160
         height: 30
     - id: 34
@@ -9889,7 +10103,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestEntryState("Jupiter Final Boss", 2, "success");
+
+        SetQuestEntryState("Jupiter
+        Final Boss", 3, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -9911,8 +10128,8 @@ MonoBehaviour:
         y: 1020
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 27.719017}
-    canvasZoom: 0.54725003
+    canvasScrollPosition: {x: 0, y: 303.1873}
+    canvasZoom: 0.72724986
   syncInfo:
     syncActors: 0
     syncItems: 0

@@ -10,10 +10,10 @@ public class PlayerDamageManager : MonoBehaviour
     public Animator shipExplosion;
     private int timesDied = 0;
     public static bool isDisabled;
-    public bool isDisabledLioskohaa;
-    public bool isDisabledWounsurs;
-    public bool isDisabledHeohumm;
-    public bool isDisabledSpectro;
+    public static bool isDisabledLioskohaa;
+    public static bool isDisabledWounsurs;
+    public static bool isDisabledHeohumm;
+    public static bool isDisabledSpectro;
     public static bool weaponsDisabled;
     public float weaponsDisabledTime;
     public float disabledTime;
@@ -26,6 +26,7 @@ public class PlayerDamageManager : MonoBehaviour
             disabledTime += Time.deltaTime;
             if (disabledTime >= 10)
             {
+                isDisabledLioskohaa = false;
                 isDisabled = false;
             }
         }

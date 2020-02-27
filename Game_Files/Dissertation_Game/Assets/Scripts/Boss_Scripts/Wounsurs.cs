@@ -87,6 +87,14 @@ public class Wounsurs : MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.WounsursHealth = Boss_Health.WounsursHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()

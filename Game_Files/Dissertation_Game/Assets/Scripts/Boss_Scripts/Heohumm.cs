@@ -18,6 +18,8 @@ public class Heohumm : MonoBehaviour
     public Transform blaster;
     public GameObject missilePrefab;
     public GameObject winScreen;
+    public AudioSource laser;
+    public AudioClip laserShot;
     public float totalTime = 0f;
     public float shotTime = 0f;
     public float nextFire;
@@ -99,6 +101,14 @@ public class Heohumm : MonoBehaviour
             sr.material = MatWhite;
             updateHealth();
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
+            Boss_Health.HeohummHealth = Boss_Health.HeohummHealth - 5;
+            sr.material = MatWhite;
+            updateHealth();
+        }
     }
 
     public void RightAnswer()
@@ -113,6 +123,7 @@ public class Heohumm : MonoBehaviour
     public void fire()
     {
             Instantiate(missilePrefab, blaster.position, blaster.rotation);
+            laser.PlayOneShot(laserShot);
             shotTime = 0f;
     }
 

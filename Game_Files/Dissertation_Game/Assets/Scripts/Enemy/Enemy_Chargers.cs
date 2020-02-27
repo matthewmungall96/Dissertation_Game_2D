@@ -44,6 +44,24 @@ public class Enemy_Chargers : MonoBehaviour
         if (collision.CompareTag("Missile"))
         {
             Destroy(collision.gameObject);
+            health = health - 6;
+            sr.material = MatWhite;
+            if (health <= 0)
+            {
+                PlayerScore.playerpoints = PlayerScore.playerpoints + 5;
+                Debug.Log("Shot Down");
+                OnDeath();
+            }
+
+            else
+            {
+                Invoke("ResetMaterial", 0.1f);
+            }
+        }
+
+        if (collision.CompareTag("Laser"))
+        {
+            Destroy(collision.gameObject);
             health = health - 3;
             sr.material = MatWhite;
             if (health <= 0)
@@ -58,6 +76,7 @@ public class Enemy_Chargers : MonoBehaviour
                 Invoke("ResetMaterial", 0.1f);
             }
         }
+
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Suicide");
