@@ -2512,7 +2512,9 @@ MonoBehaviour:
   MatWhite: {fileID: 2100000, guid: 434f5c50779e3ea45a7ae2a53d5beec7, type: 2}
   trigger_once: 0
   blaster: {fileID: 17129661}
-  missilePrefab: {fileID: 2197974161149184830, guid: 04747713146f4db45af5ca4453c85329,
+  laser: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
+  laserSource: {fileID: 1330443576}
+  missilePrefab: {fileID: 2197974161149184830, guid: 6844695230067694693b39d9a8797ffb,
     type: 3}
   winScreen: {fileID: 642090469}
   totalTime: 0

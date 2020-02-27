@@ -16,6 +16,8 @@ public class Spectro: MonoBehaviour
     public bool trigger_once;
     private bool isTriggered;
     public Transform blaster;
+    public AudioClip laser;
+    public AudioSource laserSource;
     public GameObject missilePrefab;
     public GameObject winScreen;
     public float totalTime = 0f;
@@ -57,7 +59,7 @@ public class Spectro: MonoBehaviour
             SpectroAnim.SetBool("Move_Down", false);
         }
 
-        if (shotTime > Random.RandomRange(3, 6) && death == false && rightAnswer == true)
+        if (shotTime > Random.RandomRange(1,3) && death == false && rightAnswer == true)
         {
             fire();
         }
@@ -120,6 +122,7 @@ public class Spectro: MonoBehaviour
     public void fire()
     {
         Instantiate(missilePrefab, blaster.position, blaster.rotation);
+        laserSource.PlayOneShot(laser);
         shotTime = 0f;
     }
 

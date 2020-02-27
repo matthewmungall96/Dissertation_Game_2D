@@ -3432,7 +3432,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: 1921b24cf069d4d40b37b7e92aa12174, type: 2}
 --- !u!50 &1228176196
 Rigidbody2D:
   serializedVersion: 4
@@ -5752,6 +5752,22 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 642090469}
+    - target: {fileID: 6687262031049136034, guid: 00796a6199e522e40b9abb1aae2a4034,
+        type: 3}
+      propertyPath: laserSource
+      value: 
+      objectReference: {fileID: 1330443576}
+    - target: {fileID: 6687262031049136034, guid: 00796a6199e522e40b9abb1aae2a4034,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
+    - target: {fileID: 6687262031049136034, guid: 00796a6199e522e40b9abb1aae2a4034,
+        type: 3}
+      propertyPath: missilePrefab
+      value: 
+      objectReference: {fileID: 2197974161149184830, guid: eb72c740001c80146abfb00ed3b41c28,
+        type: 3}
     - target: {fileID: 6687262031049136046, guid: 00796a6199e522e40b9abb1aae2a4034,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -2868,7 +2868,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 15297411}
     state: 0
   - condition:
       luaConditions: []
@@ -2877,7 +2877,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 15297413}
     state: 0
   setAnimatorStateActions: []
   onExecute:
@@ -2975,7 +2975,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 15297411}
     state: 1
   - condition:
       luaConditions: []
@@ -2984,7 +2984,7 @@ MonoBehaviour:
       acceptedGameObjects: []
       luaWizardIndex: 0
       lastEvaluationValue: 0
-    target: {fileID: 0}
+    target: {fileID: 15297413}
     state: 1
   setAnimatorStateActions: []
   onExecute:
@@ -4083,6 +4083,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377483788}
   m_CullTransparentMesh: 0
+--- !u!4 &1382855570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4958819394414817744, guid: 90ca1111881447148a953db99c81213c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4539946445552341679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1450078023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,7 +4332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1569396360
 Transform:
   m_ObjectHideFlags: 0
@@ -5571,13 +5577,33 @@ PrefabInstance:
         type: 3}
       propertyPath: missilePrefab
       value: 
-      objectReference: {fileID: 2197974161149184830, guid: 2a5de06cb04dd5e49a00680b9f14a053,
+      objectReference: {fileID: 2197974161149184830, guid: aaa30ccb68e8f0f48975ee8543f81356,
         type: 3}
     - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
         type: 3}
       propertyPath: HeohummHealthBar
       value: 
       objectReference: {fileID: 214789086}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: laserSource
+      value: 
+      objectReference: {fileID: 1330443576}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: blaster1
+      value: 
+      objectReference: {fileID: 17129661}
+    - target: {fileID: 2774102368113179537, guid: 90ca1111881447148a953db99c81213c,
+        type: 3}
+      propertyPath: blaster2
+      value: 
+      objectReference: {fileID: 1382855570}
     - target: {fileID: 4539946445569307154, guid: 90ca1111881447148a953db99c81213c,
         type: 3}
       propertyPath: m_LocalPosition.x

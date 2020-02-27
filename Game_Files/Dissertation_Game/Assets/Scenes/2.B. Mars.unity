@@ -3301,6 +3301,16 @@ PrefabInstance:
       propertyPath: laserAudio
       value: 
       objectReference: {fileID: 1330443576}
+    - target: {fileID: 426383305101362121, guid: 523423131bef59d4cac199e27be94786,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
+    - target: {fileID: 426383305101362122, guid: 523423131bef59d4cac199e27be94786,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 426383305101362123, guid: 523423131bef59d4cac199e27be94786,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5261,6 +5271,22 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 642090469}
+    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
+        type: 3}
+      propertyPath: laserSource
+      value: 
+      objectReference: {fileID: 1330443576}
+    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
+    - target: {fileID: 1057702664468966838, guid: 0c6dab1fa3f0001438cdfc13c670e41c,
+        type: 3}
+      propertyPath: missilePrefab
+      value: 
+      objectReference: {fileID: 2197974161149184830, guid: 5d06b7ebaf6920c42bc8d9047961e74a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c6dab1fa3f0001438cdfc13c670e41c, type: 3}
 --- !u!1001 &2466185665234260458

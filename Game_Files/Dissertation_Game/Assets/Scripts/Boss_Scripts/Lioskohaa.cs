@@ -16,6 +16,8 @@ public class Lioskohaa : MonoBehaviour
     public bool trigger_once;
     private bool isTriggered;
     public Transform blaster;
+    public AudioClip laser;
+    public AudioSource laserSource;
     public GameObject missilePrefab;
     public GameObject winScreen;
     public float totalTime = 0f;
@@ -55,7 +57,7 @@ public class Lioskohaa : MonoBehaviour
             LioskohaaAnim.SetBool("Move_Down", false);
         }
 
-        if (shotTime > Random.RandomRange(3, 6) && death == false)
+        if (shotTime > Random.RandomRange(2, 5) && death == false)
         {
             fire();
         }
@@ -109,6 +111,7 @@ public class Lioskohaa : MonoBehaviour
     public void fire()
     {
         Instantiate(missilePrefab, blaster.position, blaster.rotation);
+        laserSource.PlayOneShot(laser);
         shotTime = 0f;
     }
 

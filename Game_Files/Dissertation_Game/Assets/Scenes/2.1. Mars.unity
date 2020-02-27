@@ -6551,6 +6551,16 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 642090469}
+    - target: {fileID: 7052699710844276749, guid: 33a82bfafe08f544eb5910684aa6eca8,
+        type: 3}
+      propertyPath: laserSource
+      value: 
+      objectReference: {fileID: 1330443576}
+    - target: {fileID: 7052699710844276749, guid: 33a82bfafe08f544eb5910684aa6eca8,
+        type: 3}
+      propertyPath: laser
+      value: 
+      objectReference: {fileID: 8300000, guid: 1485a995f32db5a438b30b5c5b8e8993, type: 3}
     - target: {fileID: 7052699710844276752, guid: 33a82bfafe08f544eb5910684aa6eca8,
         type: 3}
       propertyPath: m_LocalPosition.x

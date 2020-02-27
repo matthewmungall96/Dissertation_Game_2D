@@ -15,11 +15,12 @@ public class Heohumm : MonoBehaviour
     private bool death = false;
     public bool trigger_once;
     private bool isTriggered;
-    public Transform blaster;
+    public Transform blaster1;
+    public Transform blaster2;
+    public AudioClip laser;
+    public AudioSource laserSource;
     public GameObject missilePrefab;
     public GameObject winScreen;
-    public AudioSource laser;
-    public AudioClip laserShot;
     public float totalTime = 0f;
     public float shotTime = 0f;
     public float nextFire;
@@ -69,7 +70,7 @@ public class Heohumm : MonoBehaviour
             HeohummAnim.SetBool("Move_Down", false);
         }
 
-        if (death == false && shotTime == 2)
+        if (shotTime > Random.RandomRange(1, 6) && death == false)
         {
             fire();
         }
@@ -122,8 +123,9 @@ public class Heohumm : MonoBehaviour
 
     public void fire()
     {
-            Instantiate(missilePrefab, blaster.position, blaster.rotation);
-            laser.PlayOneShot(laserShot);
+            Instantiate(missilePrefab, blaster1.position, blaster1.rotation);
+            Instantiate(missilePrefab, blaster2.position, blaster2.rotation);
+            laserSource.PlayOneShot(laser);
             shotTime = 0f;
     }
 

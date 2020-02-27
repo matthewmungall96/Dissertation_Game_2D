@@ -15,6 +15,8 @@ public class Soleil : MonoBehaviour
     private bool death = false;
     public bool trigger_once;
     private bool isTriggered;
+    public AudioClip laser;
+    public AudioSource laserSource;
     public Transform blaster;
     public GameObject missilePrefab;
     public GameObject winScreen;
@@ -57,7 +59,7 @@ public class Soleil : MonoBehaviour
             SoleilAnim.SetBool("Move_Down", false);
         }
 
-        if (shotTime > Random.RandomRange(3, 6) && death == false)
+        if (shotTime > Random.RandomRange(2,4) && death == false)
         {
             fire();
         }
@@ -122,6 +124,7 @@ public class Soleil : MonoBehaviour
         if (rightAnswer == false)
         {
             Instantiate(missilePrefab, blaster.position, blaster.rotation);
+            laserSource.PlayOneShot(laser);
             shotTime = 0f;
         }
     }
