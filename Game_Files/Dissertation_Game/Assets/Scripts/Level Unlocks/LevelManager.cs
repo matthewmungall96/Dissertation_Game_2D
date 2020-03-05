@@ -9,6 +9,10 @@ public static class LevelManager
     public static bool Mars_Level_2 = false;
     public static bool Jupiter_Level_1 = false;
     public static bool Jupiter_Level_2 = false;
+    public static bool Mars_Level_1FC = false;
+    public static bool Mars_Level_2FC = false;
+    public static bool Jupiter_Level_1FC = false;
+    public static bool Jupiter_Level_2FC = false;
 
     [Header("Number of Levels Complete")]
     public static int Mars_Levels_Complete = 0;
@@ -17,4 +21,6 @@ public static class LevelManager
     [Header("Boss Fight Variables")]
     public static bool Mars_Boss_Completed = false;
     public static bool Jupiter_Boss_Completed = false;
+    public static bool Mars_Boss_CompletedFC = false;
+    public static bool Jupiter_Boss_CompletedFC = false;
 }

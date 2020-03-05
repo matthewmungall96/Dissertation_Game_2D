@@ -2006,7 +2006,7 @@ MonoBehaviour:
   timeOffset: 10
   posOffset: {x: 7, y: 5}
   leftLimit: 0
-  rightLimit: 24
+  rightLimit: 21
   bottomLimit: 0
   topLimit: 0
 --- !u!1 &872962271

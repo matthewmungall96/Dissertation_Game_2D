@@ -353,7 +353,7 @@ MonoBehaviour:
       alwaysForceResponseMenu: 1
       includeInvalidEntries: 0
       responseTimeout: 0
-    dialogueUI: {fileID: 161038, guid: 5c56f58e2d14e894c96171a7540a6a1d, type: 3}
+    dialogueUI: {fileID: 192052, guid: d4435d68dd2fab14e933d23e59ac343f, type: 3}
     localizationSettings:
       language: 
       useSystemLanguage: 0

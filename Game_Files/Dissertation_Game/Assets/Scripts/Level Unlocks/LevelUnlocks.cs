@@ -53,12 +53,12 @@ public class LevelUnlocks : MonoBehaviour
 
         if (LevelManager.Mars_Boss_Completed == true)
         {
-            All_Mars_Complete();
+            Mars_Boss_Complete();
         }
 
         if (LevelManager.Jupiter_Boss_Completed == true)
         {
-            All_Jupiter_Complete();
+            Jupiter_Boss_Complete();
         }
     }
 
@@ -66,7 +66,7 @@ public class LevelUnlocks : MonoBehaviour
     {
         Mars_Button2.SetActive(true);
         MarsC2.SetActive(true);
-        MarsC1.SetActive(false);
+        Destroy(MarsC1);
         MarsT1.SetActive(true);
         if (LevelManager.Mars_Levels_Complete == 3)
         {
@@ -82,7 +82,7 @@ public class LevelUnlocks : MonoBehaviour
     {
         Mars_Boss_Button.SetActive(true);
         MarsBC.SetActive(true);
-        MarsC2.SetActive(false);
+        Destroy(MarsC2);
         MarsT2.SetActive(true);
         if (LevelManager.Mars_Levels_Complete == 3)
         {
@@ -97,20 +97,17 @@ public class LevelUnlocks : MonoBehaviour
     public void Mars_Boss_Complete()
     {
         LevelManager.Mars_Boss_Completed = true;
-        MarsBC.SetActive(false);
+        Destroy(MarsBC);
         MarsBT.SetActive(true);
-    }
-
-    public void All_Mars_Complete()
-    {
         Jupiter_Button.SetActive(true);
+        JupiterC1.SetActive(true);
     }
 
     public void Jupiter_1_Complete()
     {
         Jupiter_Button2.SetActive(true);
         JupiterC2.SetActive(true);
-        JupiterC1.SetActive(false);
+        Destroy(JupiterC1);
         JupiterT1.SetActive(true);
         if (LevelManager.Jupiter_Levels_Complete == 3)
         {
@@ -125,7 +122,7 @@ public class LevelUnlocks : MonoBehaviour
     {
         Jupiter_Boss_Button.SetActive(true);
         JupiterBC.SetActive(true);
-        JupiterC2.SetActive(false);
+        Destroy(JupiterC2);
         JupiterT2.SetActive(true);
         if (LevelManager.Jupiter_Levels_Complete == 3)
         {
@@ -139,11 +136,8 @@ public class LevelUnlocks : MonoBehaviour
     public void Jupiter_Boss_Complete()
     {
         LevelManager.Jupiter_Boss_Completed = true;
-        JupiterBC.SetActive(false);
+        Destroy(JupiterBC);
         JupiterBT.SetActive(true);
     }
 
-    public void All_Jupiter_Complete()
-    {
-    }
 }

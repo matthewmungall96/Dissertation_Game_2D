@@ -486,8 +486,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 905433989}
-        m_MethodName: quitGame
+      - m_Target: {fileID: 905433985}
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1575,7 +1575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Close Game
+  m_Text: Main Menu
 --- !u!222 &2146028141
 CanvasRenderer:
   m_ObjectHideFlags: 0

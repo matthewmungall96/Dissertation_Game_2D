@@ -104,6 +104,11 @@ public class Spawn_Crashers : MonoBehaviour
         PlayerScore.playerpoints = PlayerScore.playerpoints + 15;
         Destroy(gameObject);
     }
+
+    public void quitSpawning()
+    {
+        Destroy(gameObject);
+    }
 }
 
 public static class spawn_crashers

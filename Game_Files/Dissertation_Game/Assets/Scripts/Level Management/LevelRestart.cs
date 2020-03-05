@@ -10,6 +10,8 @@ public class LevelRestart : MonoBehaviour
 
     public void RestartMars1()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.NoszinaaHealth = Boss_Health.NoszinaaMaxHealth;
@@ -21,6 +23,8 @@ public class LevelRestart : MonoBehaviour
 
     public void RestartMars2()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.LioskohaaHealth = Boss_Health.LioskohaaMaxHealth;
@@ -31,6 +35,8 @@ public class LevelRestart : MonoBehaviour
 
     public void RestartMarsBoss()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.SpectroHealth = Boss_Health.SpectroMaxHealth;
@@ -41,6 +47,8 @@ public class LevelRestart : MonoBehaviour
 
     public void RestartJupiter1()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.WounsursHealth = Boss_Health.WounsursMaxHealth;
@@ -50,6 +58,8 @@ public class LevelRestart : MonoBehaviour
     }
     public void RestartJupiter2()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.SoleilHealth = Boss_Health.SoleilMaxHealth;
@@ -59,6 +69,8 @@ public class LevelRestart : MonoBehaviour
     }
     public void RestartJupiterBoss()
     {
+        PlayerDamageManager.isDisabled = false;
+        PlayerDamageManager.weaponsDisabled = false;
         PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
         ShootingHealth.ShipEnergy = ShootingHealth.maxShipEnergy;
         Boss_Health.HeohummHealth = Boss_Health.HeohummMaxHealth;

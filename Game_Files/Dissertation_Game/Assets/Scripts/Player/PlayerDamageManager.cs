@@ -15,8 +15,8 @@ public class PlayerDamageManager : MonoBehaviour
     public static bool isDisabledHeohumm;
     public static bool isDisabledSpectro;
     public static bool weaponsDisabled;
-    public float weaponsDisabledTime;
-    public float disabledTime;
+    public static float weaponsDisabledTime;
+    public static float disabledTime;
     void Update()
     {
         UpdatePlayerHealth();

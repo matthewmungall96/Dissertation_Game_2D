@@ -57,7 +57,7 @@ public class CharacterBlaster : MonoBehaviour
 
                 if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy && GamePaused == false)
                 {
-                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.35f;
+                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.75f;
                     UpdatePlayerEnergy();
                 }
 
