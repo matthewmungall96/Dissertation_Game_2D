@@ -14,6 +14,7 @@ public class CharacterBlaster : MonoBehaviour
     public AudioClip laser;
     public GameObject missilePrefab;
     public GameObject laserPrefab;
+    public static float energy = 1f;
     public Image characterEnergy;
     private bool GamePaused = false;
     public bool isDead = false;
@@ -57,7 +58,7 @@ public class CharacterBlaster : MonoBehaviour
 
                 if (ShootingHealth.ShipEnergy < ShootingHealth.maxShipEnergy && GamePaused == false)
                 {
-                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + 0.75f;
+                    ShootingHealth.ShipEnergy = ShootingHealth.ShipEnergy + energy;
                     UpdatePlayerEnergy();
                 }
 

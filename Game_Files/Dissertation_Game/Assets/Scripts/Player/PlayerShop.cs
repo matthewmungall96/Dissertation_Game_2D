@@ -115,8 +115,9 @@ public class PlayerShop : MonoBehaviour
         if (PlayerScore.playerpoints >= 150)
         {
             PlayerHealth.playerHealthMax = PlayerHealth.playerHealthMax + 100;
+            PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 150;
-            Debug.Log("Health is " + PlayerHealth.playerHealthMax);
+            Debug.Log("Health Upgrade 1 Purchased" );
             PlayerScore.health1 = true;
             health1PurchaseB.SetActive(false);
             health1PurchaseT.SetActive(false);
@@ -134,8 +135,9 @@ public class PlayerShop : MonoBehaviour
         if (PlayerScore.playerpoints >= 250)
         {
             PlayerHealth.playerHealthMax = PlayerHealth.playerHealthMax + 100;
+            PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 250;
-            Debug.Log("Health is " + PlayerHealth.playerHealthMax);
+            Debug.Log("Health Upgrade 2 Purchased");
             PlayerScore.health2 = true;
             health2PurchaseB.SetActive(false);
             health2PurchaseT.SetActive(false);
@@ -152,8 +154,9 @@ public class PlayerShop : MonoBehaviour
         if (PlayerScore.playerpoints >= 350)
         {
             PlayerHealth.playerHealthMax = PlayerHealth.playerHealthMax + 100;
+            PlayerHealth.playerHealthNo = PlayerHealth.playerHealthMax;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 350;
-            Debug.Log("Health is " + PlayerHealth.playerHealthMax);
+            Debug.Log("Health Upgrade 3 Purchased");
             PlayerScore.health3 = true;
             health3PurchaseB.SetActive(false);
             health3PurchaseT.SetActive(false);
@@ -171,7 +174,8 @@ public class PlayerShop : MonoBehaviour
         {
             ShootingHealth.maxShipEnergy = ShootingHealth.maxShipEnergy + 100;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 150;
-            Debug.Log("Energy is " + ShootingHealth.maxShipEnergy);
+            CharacterBlaster.energy = 1f;
+            Debug.Log("Energy Upgrade 1 Purchased");
             PlayerScore.energy1 = true;
             energy1PurchaseB.SetActive(false);
             energy1PurchaseT.SetActive(false);
@@ -189,7 +193,8 @@ public class PlayerShop : MonoBehaviour
         {
             ShootingHealth.maxShipEnergy = ShootingHealth.maxShipEnergy + 100;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 150;
-            Debug.Log("Energy is " + ShootingHealth.maxShipEnergy);
+            CharacterBlaster.energy = 1.25f;
+            Debug.Log("Energy Upgrade 2 Purchased");
             PlayerScore.energy2 = true;
             energy2PurchaseB.SetActive(false);
             energy2PurchaseT.SetActive(false);
@@ -207,7 +212,8 @@ public class PlayerShop : MonoBehaviour
         {
             ShootingHealth.maxShipEnergy = ShootingHealth.maxShipEnergy + 100;
             PlayerScore.playerpoints = PlayerScore.playerpoints - 350;
-            Debug.Log("Energy is " + ShootingHealth.maxShipEnergy);
+            CharacterBlaster.energy = 1.5f;
+            Debug.Log("Energy Upgrade 3 Purchased");
             PlayerScore.energy3 = true;
             energy3PurchaseB.SetActive(false);
             energy3PurchaseT.SetActive(false);
@@ -225,6 +231,7 @@ public class PlayerShop : MonoBehaviour
         {
             PlayerScore.playerpoints = PlayerScore.playerpoints - 100;
             PlayerScore.dualLasers = true;
+            Debug.Log("Dual Lasers Purchased");
             dualLaserPurchaseB.SetActive(false);
             dualLaserPurchaseT.SetActive(false);
             purchasePanel.SetActive(false);
@@ -241,6 +248,7 @@ public class PlayerShop : MonoBehaviour
         {
             PlayerScore.playerpoints = PlayerScore.playerpoints - 200;
             PlayerScore.missiles = true;
+            Debug.Log("Missile Upgrade Purchased");
             missilePurchaseB.SetActive(false);
             missilePurchaseT.SetActive(false);
             purchasePanel.SetActive(false);
@@ -257,6 +265,7 @@ public class PlayerShop : MonoBehaviour
         {
             PlayerScore.playerpoints = PlayerScore.playerpoints - 300;
             PlayerScore.dualMissiles = true;
+            Debug.Log("Dual Missile Upgrade Purchased");
             dualMissilePurchaseB.SetActive(false);
             dualMissilePurchaseT.SetActive(false);
             purchasePanel.SetActive(false);

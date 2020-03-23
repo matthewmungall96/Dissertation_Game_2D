@@ -2765,7 +2765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &251292924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8574,7 +8574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &876589664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17614,14 +17614,12 @@ MonoBehaviour:
   Jupiter_Button: {fileID: 876589663}
   Mars_Boss_Button: {fileID: 870130249}
   Jupiter_Boss_Button: {fileID: 126141612}
-  Mars_TicksCrosses: {fileID: 0}
   MarsC1: {fileID: 1230206033}
   MarsT1: {fileID: 1115599035}
   MarsC2: {fileID: 213462620}
   MarsT2: {fileID: 1097701532}
   MarsBT: {fileID: 1884794221}
   MarsBC: {fileID: 235421043}
-  Jupiter_TicksCrosses: {fileID: 0}
   JupiterC1: {fileID: 566170770}
   JupiterT1: {fileID: 1480648813}
   JupiterC2: {fileID: 608173602}
