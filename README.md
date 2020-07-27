@@ -10,6 +10,7 @@ After the success of the intial implementation, the game will now be heavily mod
 
 To do this, the following features will be implemented in Vers. 2.00;
 
+* Support for multiple coding-based languages, while allowing for the player to configure which database they would like to pull questions from.
 
 * Removal of the Score-Based store in favour of a Skill Point based system.
 
